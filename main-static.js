@@ -38,7 +38,15 @@ const staticArticles = [
     ]
   },
   {
-    id: '3', 
+    id: '3',
+    title: 'Signature de l\'acte définitif',
+    date: '2025-07-22',
+    content: 'Départ aux aurores à 6h du matin, véhicule chargé à bloc : remorque pleine à craquer et coffre de notre Dokker saturé. Rendez-vous prévu à 10h à la maison pour une dernière visite avec l\'agent immobilier Monsieur Parmentier, avant de nous rendre chez le notaire de la vendeuse à Lapleau pour la signature tant attendue de l\'acte définitif.',
+    type: 'achats',
+    images: []
+  },
+  {
+    id: '4', 
     title: 'Travaux de test',
     date: '2025-01-21',
     content: 'Ceci est un article de test pour la rubrique Travaux.',
@@ -46,7 +54,7 @@ const staticArticles = [
     images: []
   },
   {
-    id: '4',
+    id: '5',
     title: 'Découverte test',
     date: '2025-01-21', 
     content: 'Ceci est un article de test pour les découvertes.',
