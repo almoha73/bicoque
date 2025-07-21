@@ -1,5 +1,10 @@
 console.log('Script main.js chargé !');
 
+// Configuration des URLs de l'API
+const API_BASE_URL = 'http://localhost:3000/api/articles';
+const CATEGORIES_API_URL = 'http://localhost:3000/api/categories';
+const UPLOADS_BASE_URL = 'http://localhost:3000/uploads/';
+
 // Attendre que le DOM soit complètement chargé
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM complètement chargé');
