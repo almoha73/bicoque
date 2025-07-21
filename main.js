@@ -55,12 +55,6 @@ const entryTypeInput = document.getElementById('entry-type');
 const entryTitleInput = document.getElementById('entry-title');
 const entryDateInput = document.getElementById('entry-date');
 const entryContentInput = document.getElementById('entry-content');
-const entryImageInput = document.getElementById('entry-image');
-const entryZipInput = document.getElementById('entry-zip');
-const existingImagesDiv = document.getElementById('existing-images');
-const imagePreviewsDiv = document.getElementById('image-previews');
-let selectedFiles = [];
-let imagesToDelete = [];
 
 // Éléments du DOM pour la page de lecture
 const articlePage = document.getElementById('article-page');
@@ -418,127 +412,12 @@ async function openModal(article = {}) {
   entryTitleInput.value = article.title || '';
   entryDateInput.value = article.date || '';
   entryContentInput.value = article.content || '';
-
-  // Réinitialiser les variables
-  selectedFiles = [];
-  imagesToDelete = [];
-  
-  // Gérer l'affichage des images existantes
-  displayExistingImages(article.images || []);
-  
-  // Réinitialiser les champs de fichier
-  entryImageInput.value = '';
-  entryZipInput.value = '';
-  imagePreviewsDiv.innerHTML = '';
 }
 
 // Fonction pour fermer la modal d'ajout/édition
 function closeModal() {
   entryModal.style.display = 'none';
   entryForm.reset();
-  selectedFiles = [];
-  imagesToDelete = [];
-  existingImagesDiv.innerHTML = '';
-  imagePreviewsDiv.innerHTML = '';
-}
-
-// Fonction pour afficher les images existantes avec possibilité de suppression
-function displayExistingImages(images) {
-  existingImagesDiv.innerHTML = '';
-  if (images && images.length > 0) {
-    images.forEach((image, index) => {
-      const imageContainer = document.createElement('div');
-      imageContainer.style.cssText = 'display: inline-block; position: relative; margin: 5px;';
-      
-      const img = document.createElement('img');
-      img.src = `${UPLOADS_BASE_URL}${image}`;
-      img.style.cssText = 'width: 100px; height: 100px; object-fit: cover; border-radius: 4px;';
-      
-      const deleteButton = document.createElement('button');
-      deleteButton.innerHTML = '×';
-      deleteButton.type = 'button';
-      deleteButton.style.cssText = 'position: absolute; top: -5px; right: -5px; background: red; color: white; border: none; border-radius: 50%; width: 20px; height: 20px; cursor: pointer; font-size: 12px;';
-      deleteButton.onclick = () => removeExistingImage(image, imageContainer);
-      
-      imageContainer.appendChild(img);
-      imageContainer.appendChild(deleteButton);
-      existingImagesDiv.appendChild(imageContainer);
-    });
-  }
-}
-
-// Fonction pour supprimer une image existante
-function removeExistingImage(imagePath, container) {
-  imagesToDelete.push(imagePath);
-  container.remove();
-}
-
-// Fonction pour prévisualiser les nouvelles images
-function previewNewImages(files) {
-  imagePreviewsDiv.innerHTML = '';
-  Array.from(files).forEach((file, index) => {
-    if (file.type.startsWith('image/')) {
-      const imageContainer = document.createElement('div');
-      imageContainer.style.cssText = 'display: inline-block; position: relative; margin: 5px;';
-      
-      const img = document.createElement('img');
-      img.style.cssText = 'width: 100px; height: 100px; object-fit: cover; border-radius: 4px;';
-      
-      const deleteButton = document.createElement('button');
-      deleteButton.innerHTML = '×';
-      deleteButton.type = 'button';
-      deleteButton.style.cssText = 'position: absolute; top: -5px; right: -5px; background: red; color: white; border: none; border-radius: 50%; width: 20px; height: 20px; cursor: pointer; font-size: 12px;';
-      deleteButton.onclick = () => removeNewImage(index, imageContainer);
-      
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        img.src = e.target.result;
-      };
-      reader.readAsDataURL(file);
-      
-      imageContainer.appendChild(img);
-      imageContainer.appendChild(deleteButton);
-      imagePreviewsDiv.appendChild(imageContainer);
-    }
-  });
-}
-
-// Fonction pour supprimer une nouvelle image
-function removeNewImage(index, container) {
-  selectedFiles = selectedFiles.filter((_, i) => i !== index);
-  container.remove();
-  updateFileInput();
-}
-
-// Fonction pour mettre à jour le champ de fichier
-function updateFileInput() {
-  const dt = new DataTransfer();
-  selectedFiles.forEach(file => dt.items.add(file));
-  entryImageInput.files = dt.files;
-}
-
-// Fonction pour extraire les images d'un ZIP
-async function extractImagesFromZip(zipFile) {
-  try {
-    const JSZip = (await import('jszip')).default;
-    const zip = new JSZip();
-    const contents = await zip.loadAsync(zipFile);
-    const imageFiles = [];
-    
-    for (const [filename, file] of Object.entries(contents.files)) {
-      if (!file.dir && /\.(jpg|jpeg|png|gif|webp)$/i.test(filename)) {
-        const blob = await file.async('blob');
-        const imageFile = new File([blob], filename, { type: `image/${filename.split('.').pop().toLowerCase()}` });
-        imageFiles.push(imageFile);
-      }
-    }
-    
-    return imageFiles;
-  } catch (error) {
-    console.error('Erreur lors de l\'extraction du ZIP:', error);
-    alert('Erreur lors de l\'extraction du fichier ZIP. Assurez-vous qu\'il contient des images valides.');
-    return [];
-  }
 }
 
 // Fonction pour ouvrir la page de lecture
@@ -789,16 +668,6 @@ async function handleFormSubmit(event) {
   formData.append('title', title);
   formData.append('date', date);
   formData.append('content', content);
-  
-  // Ajouter les nouvelles images
-  selectedFiles.forEach((file, index) => {
-    formData.append('images', file);
-  });
-  
-  // Ajouter les images à supprimer
-  if (imagesToDelete.length > 0) {
-    formData.append('imagesToDelete', JSON.stringify(imagesToDelete));
-  }
 
   try {
     let response;
@@ -806,13 +675,19 @@ async function handleFormSubmit(event) {
       // Modifier un article existant
       response = await fetch(`${API_BASE_URL}/${id}`, {
         method: 'PUT',
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ type, title, date, content }),
       });
     } else {
       // Ajouter un nouvel article
       response = await fetch(API_BASE_URL, {
         method: 'POST',
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ type, title, date, content }),
       });
     }
 
@@ -902,22 +777,6 @@ if (categoriesCloseButton) {
 if (addCategoryForm) {
   addCategoryForm.addEventListener('submit', handleAddCategory);
 }
-
-// Écouteurs pour la gestion des images
-entryImageInput.addEventListener('change', (e) => {
-  selectedFiles = Array.from(e.target.files);
-  previewNewImages(selectedFiles);
-});
-
-entryZipInput.addEventListener('change', async (e) => {
-  const zipFile = e.target.files[0];
-  if (zipFile) {
-    const extractedImages = await extractImagesFromZip(zipFile);
-    selectedFiles = [...selectedFiles, ...extractedImages];
-    previewNewImages(selectedFiles);
-    updateFileInput();
-  }
-});
 
 // Écouteurs d'événements pour la page de lecture
 backToHomeButton.addEventListener('click', closeArticlePage);

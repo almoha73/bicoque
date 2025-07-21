@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "id": "1753095266058",
+    "title": "Première visite de la maison",
+    "date": "2025-01-15",
+    "content": "Nous avons enfin visité notre future maison en Corrèze ! Une belle bâtisse en pierre avec un potentiel énorme. Les murs sont solides, la charpente en bon état, mais il y aura du travail pour la remettre au goût du jour.\n\nL'emplacement est idéal : au calme, avec une vue dégagée sur la campagne corrézienne. Le jardin est spacieux et nous imaginons déjà les aménagements possibles.",
+    "type": "travaux",
+    "images": ["maison-exterieur.jpg"],
+    "image": "maison-exterieur.jpg",
+    "order": 0
+  },
+  {
+    "id": "1753086068675",
+    "title": "Rénovation de la cuisine",
+    "date": "2025-01-20",
+    "content": "Début des travaux dans la cuisine ! Nous avons décidé de garder le charme de l'ancien tout en modernisant l'équipement.\n\nAu programme :\n- Réfection complète de l'électricité\n- Installation d'un nouvel évier en grès\n- Peinture des murs en blanc cassé\n- Conservation des poutres apparentes\n\nLe résultat commence à prendre forme et nous sommes ravis du rendu !",
+    "type": "travaux",
+    "images": ["renovation-cuisine.jpg"],
+    "image": "renovation-cuisine.jpg",
+    "order": 1
+  },
+  {
+    "id": "1753088494764",
+    "title": "Aménagement du jardin",
+    "date": "2025-01-25",
+    "content": "Après la maison, place au jardin ! Nous avons commencé par débroussailler et planifier les différents espaces.\n\nNos projets :\n- Un potager au fond du terrain\n- Une terrasse en pierre locale\n- Plantation d'arbres fruitiers\n- Création d'un coin détente sous les chênes existants\n\nLa terre est fertile et le climat corrézien parfait pour nos projets de jardinage.",
+    "type": "travaux",
+    "images": ["jardin-correze.jpg"],
+    "image": "jardin-correze.jpg",
+    "order": 2
+  },
+  {
+    "id": "1753090000001",
+    "title": "Découverte du village de Collonges-la-Rouge",
+    "date": "2025-01-18",
+    "content": "Quelle merveille que ce village ! Classé parmi les Plus Beaux Villages de France, Collonges-la-Rouge nous a éblouis avec ses maisons en grès rouge.\n\nNous avons flâné dans les ruelles pavées, visité l'église Saint-Pierre et dégusté les spécialités locales dans une auberge typique. L'architecture médiévale est parfaitement préservée.\n\nUn incontournable quand on habite en Corrèze ! Nous y retournerons certainement pour approfondir la visite.",
+    "type": "decouvertes",
+    "images": ["village-correze.jpg"],
+    "image": "village-correze.jpg",
+    "order": 3
+  },
+  {
+    "id": "1753090000002",
+    "title": "Le marché de Brive-la-Gaillarde",
+    "date": "2025-01-22",
+    "content": "Premier marché à Brive et nous sommes conquis ! L'ambiance est chaleureuse, les producteurs locaux nombreux et les produits d'une qualité exceptionnelle.\n\nNos coups de cœur :\n- Le fromage de chèvre de la ferme du Causse\n- Les noix du Périgord (on est à la frontière !)\n- Le miel de châtaignier local\n- Les légumes bio du maraîcher de Malemort\n\nNous avons déjà nos habitudes et nos producteurs préférés. Le marché du samedi matin devient un rituel !",
+    "type": "decouvertes",
+    "images": ["marche-local.jpg"],
+    "image": "marche-local.jpg",
+    "order": 4
+  }
+]

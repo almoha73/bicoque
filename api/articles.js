@@ -1,15 +1,12 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import formidable from 'formidable';
 
 const ARTICLES_FILE = path.join(process.cwd(), 'data', 'articles.json');
-const UPLOADS_DIR = path.join(process.cwd(), 'public', 'uploads');
 
 // Helper pour s'assurer que les dossiers existent
 async function ensureDirectories() {
   try {
     await fs.mkdir(path.dirname(ARTICLES_FILE), { recursive: true });
-    await fs.mkdir(UPLOADS_DIR, { recursive: true });
   } catch (error) {
     console.error('Erreur création dossiers:', error);
   }
@@ -66,27 +63,21 @@ export default async function handler(req, res) {
     }
 
     if (req.method === 'POST') {
-      const form = formidable({
-        uploadDir: UPLOADS_DIR,
-        keepExtensions: true,
-        maxFileSize: 10 * 1024 * 1024, // 10MB
-      });
-
-      const [fields, files] = await form.parse(req);
+      const { type, title, date, content } = req.body;
       
       const articles = await readArticles();
       const newArticle = {
         id: Date.now().toString(),
-        title: Array.isArray(fields.title) ? fields.title[0] : fields.title,
-        date: Array.isArray(fields.date) ? fields.date[0] : fields.date,
-        content: Array.isArray(fields.content) ? fields.content[0] : fields.content,
-        type: Array.isArray(fields.type) ? fields.type[0] : fields.type,
-        images: files.images ? (Array.isArray(files.images) ? files.images.map(f => path.basename(f.filepath)) : [path.basename(files.images.filepath)]) : [],
+        title,
+        date,
+        content,
+        type,
+        images: [],
         order: articles.length,
       };
       
       // Maintenir la compatibilité avec l'ancien champ image
-      newArticle.image = newArticle.images.length > 0 ? newArticle.images[0] : null;
+      newArticle.image = null;
       
       articles.push(newArticle);
       await writeArticles(articles);
@@ -100,48 +91,24 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'ID manquant' });
       }
 
-      const form = formidable({
-        uploadDir: UPLOADS_DIR,
-        keepExtensions: true,
-        maxFileSize: 10 * 1024 * 1024,
-      });
-
-      const [fields, files] = await form.parse(req);
+      const { type, title, date, content } = req.body;
       
       const articles = await readArticles();
       let updatedArticle = null;
 
       const updatedArticles = articles.map((article) => {
         if (article.id === articleId) {
-          let existingImages = article.images || (article.image ? [article.image] : []);
-          
-          // Supprimer les images marquées pour suppression
-          if (fields.imagesToDelete) {
-            const imagesToDelete = JSON.parse(Array.isArray(fields.imagesToDelete) ? fields.imagesToDelete[0] : fields.imagesToDelete);
-            existingImages = existingImages.filter(img => !imagesToDelete.includes(img));
-            
-            // Supprimer physiquement les fichiers
-            for (const imgFilename of imagesToDelete) {
-              try {
-                await fs.unlink(path.join(UPLOADS_DIR, imgFilename));
-              } catch (error) {
-                console.error('Erreur suppression image:', error);
-              }
-            }
-          }
-          
-          // Ajouter les nouvelles images
-          const newImages = files.images ? (Array.isArray(files.images) ? files.images.map(f => path.basename(f.filepath)) : [path.basename(files.images.filepath)]) : [];
-          const allImages = [...existingImages, ...newImages];
+          // Conserver les images existantes
+          const existingImages = article.images || [];
           
           updatedArticle = {
             ...article,
-            title: (Array.isArray(fields.title) ? fields.title[0] : fields.title) || article.title,
-            date: (Array.isArray(fields.date) ? fields.date[0] : fields.date) || article.date,
-            content: (Array.isArray(fields.content) ? fields.content[0] : fields.content) || article.content,
-            type: (Array.isArray(fields.type) ? fields.type[0] : fields.type) || article.type,
-            images: allImages,
-            image: allImages.length > 0 ? allImages[0] : null,
+            title: title || article.title,
+            date: date || article.date,
+            content: content || article.content,
+            type: type || article.type,
+            images: existingImages,
+            image: existingImages.length > 0 ? existingImages[0] : null,
           };
           return updatedArticle;
         }
@@ -166,16 +133,6 @@ export default async function handler(req, res) {
       const articleToDelete = articles.find(article => article.id === articleId);
       
       if (articleToDelete) {
-        // Supprimer toutes les images associées
-        const imagesToDelete = articleToDelete.images || (articleToDelete.image ? [articleToDelete.image] : []);
-        for (const imgFilename of imagesToDelete) {
-          try {
-            await fs.unlink(path.join(UPLOADS_DIR, imgFilename));
-          } catch (error) {
-            console.error('Erreur suppression image:', error);
-          }
-        }
-        
         const newArticles = articles.filter((article) => article.id !== articleId);
         await writeArticles(newArticles);
         return res.status(204).end();
