@@ -248,8 +248,10 @@ function renderCategoriesInModal() {
 function openCategoriesModal() {
   console.log('openCategoriesModal appelée');
   console.log('categoriesModal:', categoriesModal);
+  console.log('categoriesModal.style.display avant:', categoriesModal.style.display);
   if (categoriesModal) {
     categoriesModal.style.display = 'block';
+    console.log('categoriesModal.style.display après:', categoriesModal.style.display);
     loadCategories();
   } else {
     console.error('categoriesModal non trouvé');
@@ -868,7 +870,11 @@ entryForm.addEventListener('submit', handleFormSubmit);
 
 // Écouteurs d'événements pour la gestion des rubriques
 if (manageCategoriesButton) {
-  manageCategoriesButton.addEventListener('click', openCategoriesModal);
+  manageCategoriesButton.addEventListener('click', function(event) {
+    console.log('Clic détecté sur le bouton gérer les rubriques');
+    event.preventDefault();
+    openCategoriesModal();
+  });
   console.log('Écouteur ajouté au bouton gérer les rubriques');
 } else {
   console.error('Bouton manage-categories non trouvé');
