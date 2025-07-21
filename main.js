@@ -871,9 +871,12 @@ entryForm.addEventListener('submit', handleFormSubmit);
 // Écouteurs d'événements pour la gestion des rubriques
 if (manageCategoriesButton) {
   manageCategoriesButton.addEventListener('click', function(event) {
+    console.log('CLIC DÉTECTÉ SUR LE BOUTON !');
     console.log('Clic détecté sur le bouton gérer les rubriques');
     event.preventDefault();
+    console.log('Appel de openCategoriesModal...');
     openCategoriesModal();
+    console.log('openCategoriesModal appelée');
   });
   console.log('Écouteur ajouté au bouton gérer les rubriques');
 } else {
