@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "express": "^5.1.0",
-    "jszip": "^3.10.1"
+    "jszip": "^3.10.1",
+    "formidable": "^3.5.1"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/articles/:id",
+      "destination": "/api/articles?id=:id"
+    },
+    {
+      "source": "/api/categories/:id", 
+      "destination": "/api/categories?id=:id"
+    }
+  ]
+}

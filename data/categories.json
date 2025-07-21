@@ -1,0 +1,12 @@
+[
+  {
+    "id": "travaux",
+    "name": "Travaux & Achats",
+    "order": 0
+  },
+  {
+    "id": "decouvertes",
+    "name": "Nos découvertes en Corrèze",
+    "order": 1
+  }
+]
