@@ -4,15 +4,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "mkdir -p dist && cp *.html dist/ 2>/dev/null || true && cp *.css dist/ 2>/dev/null || true && cp *.js dist/ 2>/dev/null || true && cp -r src dist/ 2>/dev/null || true && cp -r public dist/ 2>/dev/null || true && cp -r data dist/ 2>/dev/null || true",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^7.0.4"
-  },
-  "dependencies": {
-    "express": "^5.1.0",
-    "jszip": "^3.10.1",
-    "formidable": "^3.5.1"
   }
 }
