@@ -869,19 +869,6 @@ closeModalButton.addEventListener('click', closeModal);
 entryForm.addEventListener('submit', handleFormSubmit);
 
 // Écouteurs d'événements pour la gestion des rubriques
-if (manageCategoriesButton) {
-  manageCategoriesButton.addEventListener('click', function(event) {
-    console.log('CLIC DÉTECTÉ SUR LE BOUTON !');
-    console.log('Clic détecté sur le bouton gérer les rubriques');
-    event.preventDefault();
-    console.log('Appel de openCategoriesModal...');
-    openCategoriesModal();
-    console.log('openCategoriesModal appelée');
-  });
-  console.log('Écouteur ajouté au bouton gérer les rubriques');
-} else {
-  console.error('Bouton manage-categories non trouvé');
-}
 
 if (categoriesCloseButton) {
   categoriesCloseButton.addEventListener('click', closeCategoriesModal);
@@ -961,6 +948,24 @@ window.addEventListener('popstate', (event) => {
 // Rendre les articles et charger les rubriques au chargement de la page
 renderArticles();
 loadCategoriesInForm();
+
+// Attacher l'événement après le chargement du DOM
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM chargé, recherche du bouton...');
+  const manageCategoriesBtn = document.getElementById('manage-categories');
+  console.log('Bouton trouvé:', manageCategoriesBtn);
+  
+  if (manageCategoriesBtn) {
+    manageCategoriesBtn.addEventListener('click', function(event) {
+      console.log('CLIC DÉTECTÉ !');
+      event.preventDefault();
+      openCategoriesModal();
+    });
+    console.log('Événement attaché avec succès');
+  } else {
+    console.error('Bouton non trouvé dans DOMContentLoaded');
+  }
+});
 
 // Debug: vérifier si les éléments existent
 console.log('manageCategoriesButton:', document.getElementById('manage-categories'));
