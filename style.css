@@ -36,7 +36,7 @@ body {
 header {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: var(--background-color);
-  padding: 6rem 0;
+  padding: 3rem 0;
   margin: 0;
   box-shadow: inset 0 0 50px rgba(0,0,0,0.1);
   position: relative;
@@ -56,9 +56,10 @@ header::before {
 header h1 a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-align: center;
   display: block;
+  font-weight: bold;
 }
 
 .top-actions {
