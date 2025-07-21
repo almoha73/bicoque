@@ -1,9 +1,9 @@
 console.log('Script main.js chargé !');
 
 // URL de base de l'API backend
-const API_BASE_URL = 'http://localhost:3000/api/articles';
-const CATEGORIES_API_URL = 'http://localhost:3000/api/categories';
-const UPLOADS_BASE_URL = 'http://localhost:3000/uploads/';
+const API_BASE_URL = '/api/articles';
+const CATEGORIES_API_URL = '/api/categories';
+const UPLOADS_BASE_URL = '/uploads/';
 
 // Éléments du DOM pour l'ajout/édition d'articles
 const travauxEntries = document.getElementById('travaux-entries');
@@ -705,7 +705,7 @@ function handleDrop(e) {
 // Fonction pour réorganiser les articles
 async function reorderArticles(draggedId, targetId) {
   try {
-    const response = await fetch('http://localhost:3000/api/articles/reorder', {
+    const response = await fetch('/api/articles/reorder', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
