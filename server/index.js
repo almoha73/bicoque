@@ -47,6 +47,9 @@ const upload = multer({ storage: storage });
 // Servir les images statiques
 app.use('/uploads', express.static(UPLOADS_DIR));
 
+// Servir les fichiers statiques du frontend (CSS, JS, etc.)
+app.use(express.static(path.join(__dirname, '..')));
+
 // Route pour servir index.html
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'index.html'));
