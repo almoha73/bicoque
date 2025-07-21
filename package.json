@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "cp -r . dist/ && rm -rf dist/node_modules dist/.git",
+    "build": "mkdir -p dist && cp -r *.html *.css *.js src/ public/ api/ data/ dist/ 2>/dev/null || true",
     "preview": "vite preview"
   },
   "devDependencies": {
