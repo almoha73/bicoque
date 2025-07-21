@@ -47,6 +47,11 @@ const upload = multer({ storage: storage });
 // Servir les images statiques
 app.use('/uploads', express.static(UPLOADS_DIR));
 
+// Route pour servir index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'index.html'));
+});
+
 // Helper pour lire/écrire les articles
 const readArticles = () => {
   const data = fs.readFileSync(ARTICLES_FILE);
