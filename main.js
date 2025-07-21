@@ -952,3 +952,7 @@ window.addEventListener('popstate', (event) => {
 // Rendre les articles et charger les rubriques au chargement de la page
 renderArticles();
 loadCategoriesInForm();
+
+// Debug: vérifier si les éléments existent
+console.log('manageCategoriesButton:', document.getElementById('manage-categories'));
+console.log('categoriesModal:', document.getElementById('categories-modal'));
