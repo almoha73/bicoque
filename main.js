@@ -8,14 +8,21 @@ document.addEventListener('DOMContentLoaded', function() {
   renderArticles();
   loadCategoriesInForm();
   
-  // Attacher l'événement pour le bouton de gestion des rubriques
-  const manageCategoriesBtn = document.getElementById('manage-categories');
-  if (manageCategoriesBtn) {
-    manageCategoriesBtn.addEventListener('click', function(event) {
-      event.preventDefault();
-      openCategoriesModal();
-    });
-  }
+  // Attacher l'événement pour le bouton de gestion des rubriques après un délai
+  setTimeout(() => {
+    const manageCategoriesBtn = document.getElementById('manage-categories');
+    if (manageCategoriesBtn) {
+      manageCategoriesBtn.onclick = function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        console.log('Bouton gérer rubriques cliqué !');
+        openCategoriesModal();
+      };
+      console.log('Événement onclick attaché au bouton gérer rubriques');
+    } else {
+      console.error('Bouton manage-categories non trouvé');
+    }
+  }, 100);
 });
 
 // URL de base de l'API backend
