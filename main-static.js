@@ -19,8 +19,7 @@ const staticArticles = [
       'premiere-visite/20250514_153043.jpg',
       'premiere-visite/20250514_164259.jpg',
       'premiere-visite/20250514_164308.jpg',
-      'premiere-visite/Screenshot_20250514_195125_Photos.jpg',
-      'premiere-visite/20250514_142615.mp4'
+      'premiere-visite/Screenshot_20250514_195125_Photos.jpg'
     ]
   },
   {
