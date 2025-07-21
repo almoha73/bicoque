@@ -979,9 +979,22 @@ setTimeout(() => {
   const btn = document.getElementById('manage-categories');
   console.log('Bouton trouvé (timeout):', btn);
   if (btn) {
+    // Test si l'élément peut recevoir des clics
+    console.log('Style pointer-events:', window.getComputedStyle(btn).pointerEvents);
+    console.log('Style z-index:', window.getComputedStyle(btn).zIndex);
+    console.log('Style position:', window.getComputedStyle(btn).position);
+    
+    // Test avec mousedown au lieu de click
+    btn.addEventListener('mousedown', function(e) {
+      console.log('MOUSEDOWN DÉTECTÉ !');
+      e.preventDefault();
+      e.stopPropagation();
+    });
+    
     btn.onclick = function(e) {
       console.log('ONCLICK DIRECT DÉTECTÉ !');
       e.preventDefault();
+      e.stopPropagation();
       openCategoriesModal();
     };
     console.log('onclick attaché directement');
