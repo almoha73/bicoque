@@ -86,7 +86,6 @@ header h1 a {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(93, 64, 55, 0.4);
   border-color: rgba(245, 242, 232, 0.6);
-  pointer-events: auto !important;
 }
 
 /* Responsive pour mobile */

@@ -4,19 +4,22 @@ console.log('Script main.js chargé !');
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM complètement chargé');
   
-}
-)
-// URL de base de l'API backend
-const API_BASE_URL = '/api/articles';
-const CATEGORIES_API_URL = '/api/categories';
-const UPLOADS_BASE_URL = '/uploads/';
-
-// Éléments du DOM pour l'ajout/édition d'articles
-const travauxEntries = document.getElementById('travaux-entries');
-const decouvertesEntries = document.getElementById('decouvertes-entries');
 const addTravauxButton = document.getElementById('add-travaux');
 const addDecouvertesButton = document.getElementById('add-decouvertes');
 
+  
+  // Attacher l'événement au bouton de gestion des rubriques après un délai
+  setTimeout(() => {
+    const btn = document.getElementById('manage-categories');
+    if (btn) {
+      btn.onclick = function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openCategoriesModal();
+        return false;
+      };
+    }
+  }, 100);
 // Variables globales pour les rubriques (pour plus tard)
 let categories = [];
 let categoryContainers = new Map();
