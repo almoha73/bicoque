@@ -245,7 +245,7 @@ function renderCategoriesInModal() {
 }
 
 // Ouvrir la modale de gestion des rubriques
-window.openCategoriesModal = function openCategoriesModal() {
+function openCategoriesModal() {
   console.log('openCategoriesModal appelée');
   console.log('categoriesModal:', categoriesModal);
   if (categoriesModal) {
