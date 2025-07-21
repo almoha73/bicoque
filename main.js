@@ -1,32 +1,34 @@
 console.log('Script main.js chargé !');
 
-// Configuration des URLs de l'API
-const API_BASE_URL = 'http://localhost:3000/api/articles';
-const CATEGORIES_API_URL = 'http://localhost:3000/api/categories';
-const UPLOADS_BASE_URL = 'http://localhost:3000/uploads/';
-
 // Attendre que le DOM soit complètement chargé
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM complètement chargé');
   
-}
-)
+  // Rendre les articles et charger les rubriques au chargement de la page
+  renderArticles();
+  loadCategoriesInForm();
+  
+  // Attacher l'événement pour le bouton de gestion des rubriques
+  const manageCategoriesBtn = document.getElementById('manage-categories');
+  if (manageCategoriesBtn) {
+    manageCategoriesBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+      openCategoriesModal();
+    });
+  }
+});
+
+// URL de base de l'API backend
+const API_BASE_URL = '/api/articles';
+const CATEGORIES_API_URL = '/api/categories';
+const UPLOADS_BASE_URL = '/uploads/';
+
+// Éléments du DOM pour l'ajout/édition d'articles
+const travauxEntries = document.getElementById('travaux-entries');
+const decouvertesEntries = document.getElementById('decouvertes-entries');
 const addTravauxButton = document.getElementById('add-travaux');
 const addDecouvertesButton = document.getElementById('add-decouvertes');
 
-  
-  // Attacher l'événement au bouton de gestion des rubriques après un délai
-  setTimeout(() => {
-    const btn = document.getElementById('manage-categories');
-    if (btn) {
-      btn.onclick = function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        openCategoriesModal();
-        return false;
-      };
-    }
-  }, 100);
 // Variables globales pour les rubriques (pour plus tard)
 let categories = [];
 let categoryContainers = new Map();
@@ -960,7 +962,3 @@ window.addEventListener('popstate', (event) => {
     closeSlideshowModal();
   }
 });
-
-// Rendre les articles et charger les rubriques au chargement de la page
-renderArticles();
-loadCategoriesInForm();
