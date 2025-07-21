@@ -4,6 +4,8 @@ console.log('Script main.js chargé !');
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM complètement chargé');
   
+}
+)
 const addTravauxButton = document.getElementById('add-travaux');
 const addDecouvertesButton = document.getElementById('add-decouvertes');
 
