@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal de Bord - Notre Bicoque en Corrèze</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h1><a href="/">Journal de la Bicoque</a></h1>
+          <button id="manage-categories" class="manage-categories-btn">⚙️ Gérer les rubriques</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="hero">
+        <h2>Suivez notre aventure, des rénovations à la découverte de la Corrèze.</h2>
+        <p>Le carnet de bord de notre maison et de nos explorations locales.</p>
+      </section>
+
+      <section id="travaux">
+        <div class="section-header">
+          <h3>Derniers Travaux & Achats</h3>
+          <button id="add-travaux" class="add-button">+</button>
+        </div>
+        <div class="entries-container" id="travaux-entries">
+          <!-- Articles de travaux seront insérés ici par JS -->
+        </div>
+      </section>
+
+      <section id="decouvertes">
+        <div class="section-header">
+          <h3>Nos Découvertes en Corrèze</h3>
+          <button id="add-decouvertes" class="add-button">+</button>
+        </div>
+        <div class="entries-container" id="decouvertes-entries">
+          <!-- Articles de découvertes seront insérés ici par JS -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>&copy; 2025 La Bicoque. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Modal pour ajouter/éditer un article -->
+    <div id="entry-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Ajouter/Éditer un Article</h2>
+        <form id="entry-form">
+          <input type="hidden" id="entry-id" />
+          <label for="entry-type">Type:</label>
+          <select id="entry-type" required>
+            <option value="travaux">Travaux & Achats</option>
+            <option value="decouvertes">Découvertes</option>
+          </select>
+
+          <label for="entry-title">Titre:</label>
+          <input type="text" id="entry-title" required />
+
+          <label for="entry-date">Date:</label>
+          <input type="date" id="entry-date" required />
+
+          <label for="entry-content">Contenu:</label>
+          <textarea id="entry-content" rows="5" required></textarea>
+
+          <label for="entry-image">Images:</label>
+          <div id="image-section">
+            <div id="existing-images"></div>
+            <input type="file" id="entry-image" accept="image/*" multiple />
+            <input type="file" id="entry-zip" accept=".zip" style="margin-top: 10px;" />
+            <label for="entry-zip" style="font-size: 0.9em; color: #666;">Ou sélectionnez un fichier ZIP contenant des images</label>
+            <div id="image-previews" style="margin-top: 10px;"></div>
+          </div>
+
+          <button type="submit">Enregistrer</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Page pour lire un article complet -->
+    <div id="article-page" class="article-page" style="display: none;">
+      <div class="article-container">
+        <div class="article-header">
+          <button id="back-to-home" class="back-button">← Retour</button>
+        </div>
+        <article class="full-article">
+          <h1 id="article-title"></h1>
+          <p class="date" id="article-date"></p>
+          <div id="article-content" class="content"></div>
+          <div id="article-images" class="image-gallery"></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Diaporama pour les images -->
+    <div id="slideshow-modal" class="slideshow-modal" style="display: none;">
+      <div class="slideshow-container">
+        <button class="slideshow-close">&times;</button>
+        <button class="slideshow-prev">&#10094;</button>
+        <img id="slideshow-image" src="" alt="Image du diaporama">
+        <button class="slideshow-next">&#10095;</button>
+        <div class="slideshow-counter">
+          <span id="slideshow-current">1</span> / <span id="slideshow-total">1</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal pour gérer les rubriques -->
+    <div id="categories-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button categories-close-button">&times;</span>
+        <h2>Gestion des rubriques</h2>
+        
+        <div class="categories-section">
+          <h3>Rubriques existantes</h3>
+          <div id="categories-list" class="categories-list">
+            <!-- Liste des rubriques -->
+          </div>
+        </div>
+
+        <div class="categories-section">
+          <h3>Ajouter une nouvelle rubrique</h3>
+          <form id="add-category-form">
+            <input type="text" id="new-category-name" placeholder="Nom de la rubrique" required />
+            <button type="submit">Ajouter</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
