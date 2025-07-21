@@ -972,3 +972,18 @@ document.addEventListener('DOMContentLoaded', function() {
     console.error('Bouton non trouvé dans DOMContentLoaded');
   }
 });
+
+// Test direct sans DOMContentLoaded
+setTimeout(() => {
+  console.log('Test direct après timeout...');
+  const btn = document.getElementById('manage-categories');
+  console.log('Bouton trouvé (timeout):', btn);
+  if (btn) {
+    btn.onclick = function(e) {
+      console.log('ONCLICK DIRECT DÉTECTÉ !');
+      e.preventDefault();
+      openCategoriesModal();
+    };
+    console.log('onclick attaché directement');
+  }
+}, 1000);
