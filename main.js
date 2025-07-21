@@ -1,5 +1,9 @@
 console.log('Script main.js chargé !');
 
+// Attendre que le DOM soit complètement chargé
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM complètement chargé');
+  
 // URL de base de l'API backend
 const API_BASE_URL = '/api/articles';
 const CATEGORIES_API_URL = '/api/categories';
@@ -865,8 +869,8 @@ async function handleReadMore(event) {
 // Écouteurs d'événements pour la modal d'ajout/édition
 if (addTravauxButton) addTravauxButton.addEventListener('click', () => openModal({ type: 'travaux' }));
 if (addDecouvertesButton) addDecouvertesButton.addEventListener('click', () => openModal({ type: 'decouvertes' }));
-closeModalButton.addEventListener('click', closeModal);
-entryForm.addEventListener('submit', handleFormSubmit);
+if (closeModalButton) closeModalButton.addEventListener('click', closeModal);
+if (entryForm) entryForm.addEventListener('submit', handleFormSubmit);
 
 // Écouteurs d'événements pour la gestion des rubriques
 
@@ -879,28 +883,32 @@ if (addCategoryForm) {
 }
 
 // Écouteurs pour la gestion des images
-entryImageInput.addEventListener('change', (e) => {
-  selectedFiles = Array.from(e.target.files);
-  previewNewImages(selectedFiles);
-});
-
-entryZipInput.addEventListener('change', async (e) => {
-  const zipFile = e.target.files[0];
-  if (zipFile) {
-    const extractedImages = await extractImagesFromZip(zipFile);
-    selectedFiles = [...selectedFiles, ...extractedImages];
+if (entryImageInput) {
+  entryImageInput.addEventListener('change', (e) => {
+    selectedFiles = Array.from(e.target.files);
     previewNewImages(selectedFiles);
-    updateFileInput();
-  }
-});
+  });
+}
+
+if (entryZipInput) {
+  entryZipInput.addEventListener('change', async (e) => {
+    const zipFile = e.target.files[0];
+    if (zipFile) {
+      const extractedImages = await extractImagesFromZip(zipFile);
+      selectedFiles = [...selectedFiles, ...extractedImages];
+      previewNewImages(selectedFiles);
+      updateFileInput();
+    }
+  });
+}
 
 // Écouteurs d'événements pour la page de lecture
-backToHomeButton.addEventListener('click', closeArticlePage);
+if (backToHomeButton) backToHomeButton.addEventListener('click', closeArticlePage);
 
 // Écouteurs d'événements pour le diaporama
-slideshowClose.addEventListener('click', closeSlideshowModal);
-slideshowPrev.addEventListener('click', previousImage);
-slideshowNext.addEventListener('click', nextImage);
+if (slideshowClose) slideshowClose.addEventListener('click', closeSlideshowModal);
+if (slideshowPrev) slideshowPrev.addEventListener('click', previousImage);
+if (slideshowNext) slideshowNext.addEventListener('click', nextImage);
 
 // Navigation au clavier pour le diaporama
 document.addEventListener('keydown', (event) => {
@@ -920,11 +928,13 @@ document.addEventListener('keydown', (event) => {
 });
 
 // Fermer le diaporama en cliquant en dehors de l'image
-slideshowModal.addEventListener('click', (event) => {
-  if (event.target === slideshowModal) {
-    closeSlideshowModal();
-  }
-});
+if (slideshowModal) {
+  slideshowModal.addEventListener('click', (event) => {
+    if (event.target === slideshowModal) {
+      closeSlideshowModal();
+    }
+  });
+}
 
 // Fermer la modal si l'utilisateur clique en dehors
 window.addEventListener('click', (event) => {
@@ -949,24 +959,8 @@ window.addEventListener('popstate', (event) => {
 renderArticles();
 loadCategoriesInForm();
 
-// Attacher l'événement après le chargement du DOM
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM chargé, recherche du bouton...');
-  const manageCategoriesBtn = document.getElementById('manage-categories');
-  console.log('Bouton trouvé:', manageCategoriesBtn);
-  
-  if (manageCategoriesBtn) {
-    manageCategoriesBtn.addEventListener('click', function(event) {
-      console.log('CLIC DÉTECTÉ !');
-      event.preventDefault();
-      openCategoriesModal();
-    });
-    console.log('Événement attaché avec succès');
-  } else {
-    console.error('Bouton non trouvé dans DOMContentLoaded');
-  }
-});
-
 // Debug: vérifier si les éléments existent
 console.log('manageCategoriesButton:', document.getElementById('manage-categories'));
 console.log('categoriesModal:', document.getElementById('categories-modal'));
+
+}); // Fin du DOMContentLoaded
