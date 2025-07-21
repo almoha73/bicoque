@@ -972,7 +972,3 @@ document.addEventListener('DOMContentLoaded', function() {
     console.error('Bouton non trouvé dans DOMContentLoaded');
   }
 });
-
-// Debug: vérifier si les éléments existent
-console.log('manageCategoriesButton:', document.getElementById('manage-categories'));
-console.log('categoriesModal:', document.getElementById('categories-modal'));
