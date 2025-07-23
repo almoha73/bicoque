@@ -41,17 +41,32 @@ const staticArticles = [
     id: '3',
     title: 'Signature de l\'acte définitif',
     date: '2025-07-22',
-    content: 'Départ aux aurores à 6h du matin, véhicule chargé à bloc : remorque pleine à craquer et coffre de notre Dokker saturé. Rendez-vous prévu à 10h à la maison pour une dernière visite avec l\'agent immobilier Monsieur Parmentier, avant de nous rendre chez le notaire de la vendeuse à Lapleau pour la signature tant attendue de l\'acte définitif.',
+    content: 'Grande journée ! Avant de nous rendre chez le notaire, nous avons déposé quelques affaires et la remorque dans la maison. Après la signature tant attendue, nous avons fait un arrêt à Marcillac pour acheter de quoi célébrer - arrivées juste à temps avant la fermeture à 12h30 !\n\nApéritif improvisé au vin rouge dans des mugs, faute de verres. L\'après-midi a été consacrée au grand ménage et au débarras des nombreux cartons laissés par l\'ancienne propriétaire. Orange est venu installer la box internet à 15h30, puis Erten le maçon a fait le tour de la propriété avec nous pour évaluer les futurs travaux.\n\nBonne surprise : nous avons découvert deux lits de camp très confortables dans la maison ! Installés devant le cantou pour notre première nuit, avec Vaya notre chien sur le canapé. Nuit très paisible dans notre nouvelle maison.',
     type: 'achats',
-    images: []
+    images: [
+      'signature/PXL_20250722_104917935.MP.jpg',
+      'signature/PXL_20250722_111435673.MP.jpg',
+      'signature/PXL_20250722_111626001.jpg',
+      'signature/PXL_20250722_145019702.jpg',
+      'signature/PXL_20250722_145031281.jpg',
+      'signature/PXL_20250722_204441173.jpg',
+      'signature/PXL_20250722_204450868.jpg'
+    ]
   },
   {
-    id: '4', 
-    title: 'Travaux de test',
-    date: '2025-01-21',
-    content: 'Ceci est un article de test pour la rubrique Travaux.',
+    id: '4',
+    title: 'Première journée à la bicoque',
+    date: '2025-07-23',
+    content: 'Réveil en douceur après une excellente première nuit dans notre nouvelle maison ! La journée a commencé avec quelques contretemps : le technicien pour l\'entretien de la fosse septique, initialement prévu le matin, a d\'abord reporté à l\'après-midi puis finalement annulé. Rendez-vous pris pour demain matin... si tout va bien cette fois !\n\nLa matinée a été consacrée à une magnifique balade dans les bois avec Vaya. Quel bonheur de découvrir que le sentier commence directement au bout de notre jardin ! La nature corrézienne nous offre un spectacle somptueux.\n\nNous avons continué le grand débarras, remplissant la remorque pour un aller-retour à la déchetterie. Pause déjeuner bien méritée au lac de Marsillac : menu complet avec quart de vin rouge pour 18 euros, un excellent rapport qualité-prix ! L\'après-midi devait voir la visite du maçon, mais lui aussi a annulé - ce sera pour août.\n\nLa soirée s\'est achevée paisiblement devant le cantou, bercée par le bruit de la pluie et de l\'orage. Premiers moments de sérénité dans notre bicoque !',
     type: 'travaux',
-    images: []
+    images: [
+      'premiere-journee/PXL_20250723_052538130.jpg',
+      'premiere-journee/PXL_20250723_074817945.jpg',
+      'premiere-journee/PXL_20250723_075539967.jpg',
+      'premiere-journee/PXL_20250723_125650126.jpg',
+      'premiere-journee/PXL_20250723_163437347.jpg',
+      'premiere-journee/PXL_20250723_165121744.jpg'
+    ]
   },
   {
     id: '5',
@@ -111,17 +126,27 @@ function loadAndRenderCategories() {
   });
 }
 
+// Fonction pour normaliser le chemin d'une image
+function getImagePath(imagePath) {
+  // Si l'image commence déjà par "uploads/", ne pas ajouter le préfixe
+  if (imagePath.startsWith('uploads/')) {
+    return `/${imagePath}`;
+  }
+  // Sinon, ajouter le préfixe /uploads/
+  return `/uploads/${imagePath}`;
+}
+
 // Fonction pour rendre les images d'un article
 function renderArticleImages(images) {
   if (!images || images.length === 0) return '';
   
   if (images.length === 1) {
-    return `<img src="/uploads/${images[0]}" alt="Image" style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;" />`;
+    return `<img src="${getImagePath(images[0])}" alt="Image" style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;" />`;
   }
   
   // Pour plusieurs images, créer une galerie simple
   const imageElements = images.slice(0, 3).map(image => 
-    `<img src="/uploads/${image}" alt="Image" style="width: 32%; height: 80px; object-fit: cover; margin: 1px; border-radius: 3px;" />`
+    `<img src="${getImagePath(image)}" alt="Image" style="width: 32%; height: 80px; object-fit: cover; margin: 1px; border-radius: 3px;" />`
   ).join('');
   
   const moreText = images.length > 3 ? `<span style="font-size: 0.8em; color: #666;">+${images.length - 3} autres</span>` : '';
@@ -241,9 +266,9 @@ function displayFullMediaGallery(medias) {
     const isVideo = /\.(mp4|webm|ogg|mov|avi)$/i.test(media);
     
     if (isVideo) {
-      return `<video src="/uploads/${media}" data-index="${index}" class="gallery-media" controls style="width: min(200px, 45vw); height: min(150px, 35vw); object-fit: cover; border-radius: 5px; cursor: pointer;" />`;
+      return `<video src="${getImagePath(media)}" data-index="${index}" class="gallery-media" controls style="width: min(200px, 45vw); height: min(150px, 35vw); object-fit: cover; border-radius: 5px; cursor: pointer;" />`;
     } else {
-      return `<img src="/uploads/${media}" data-index="${index}" class="gallery-media" style="width: min(200px, 45vw); height: min(150px, 35vw); object-fit: cover; border-radius: 5px; cursor: pointer;" />`;
+      return `<img src="${getImagePath(media)}" data-index="${index}" class="gallery-media" style="width: min(200px, 45vw); height: min(150px, 35vw); object-fit: cover; border-radius: 5px; cursor: pointer;" />`;
     }
   }).join('');
   
@@ -296,14 +321,14 @@ function openSlideshow(mediaIndex) {
   
   // Créer l'élément média approprié
   const mediaElement = isVideo 
-    ? `<video src="/uploads/${currentMedia}" controls autoplay style="
+    ? `<video src="${getImagePath(currentMedia)}" controls autoplay style="
         max-width: 95vw; 
         max-height: 85vh; 
         object-fit: contain;
         margin: 0 auto;
         display: block;
       ">`
-    : `<img src="/uploads/${currentMedia}" style="
+    : `<img src="${getImagePath(currentMedia)}" style="
         max-width: 95vw; 
         max-height: 85vh; 
         object-fit: contain;
@@ -356,7 +381,7 @@ function updateSlideshowContent() {
   
   if (isVideo) {
     slideshowContent.innerHTML = `
-      <video src="/uploads/${currentMedia}" controls autoplay 
+      <video src="${getImagePath(currentMedia)}" controls autoplay 
              style="max-width: 90vw; max-height: 80vh; object-fit: contain;"
              onload="console.log('Video chargée')" 
              onerror="console.error('Erreur chargement video:', this.src)">
@@ -364,7 +389,7 @@ function updateSlideshowContent() {
     `;
   } else {
     slideshowContent.innerHTML = `
-      <img src="/uploads/${currentMedia}" alt="Image du diaporama" 
+      <img src="${getImagePath(currentMedia)}" alt="Image du diaporama" 
            style="width: 80vw; height: 60vh; background: red; border: 5px solid yellow; position: relative; z-index: 10001;"
            onload="console.log('Image chargée:', this.src, 'Dimensions:', this.naturalWidth + 'x' + this.naturalHeight)" 
            onerror="console.error('Erreur chargement image:', this.src)">
