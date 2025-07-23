@@ -48,5 +48,23 @@
     "images": ["marche-local.jpg"],
     "image": "marche-local.jpg",
     "order": 4
+  },
+  {
+    "id": "1753258934000",
+    "title": "Signature de l'acte définitif",
+    "date": "2025-07-23",
+    "content": "avant d'aller signer, nous avons laissé la remorque et qq affaires dans la maison. En sortant de chez le notaire, nous sommes allés à Marcillac pour acheter de quoi se faire un apéro. In extremis, il fermait à 12h 30 et nous sommes arrivées à 12h15. Apero au vin rouge dans des mugs, car nous n'avons pas encore de verres. Ensuite début de gros ménage. Orange est venu nous installer la box à 15h30. On a débarrassé une grande partie des cartons que l'ancienne propriétaire a laissé sur place avec plein de conneries à jeter .... Erten le maçon est passé ensuite pour refaire le tour avec nous des éventuels travaux à prévoir. Nous avons trouver deux lits de camp de compétition dans la maison. Plus confortables que les notres. On les a installé devant le cantou pour passer la nuit. Vaya a dormi sur le canapé (c'est notre chien) - super bonne nuit, très calme.",
+    "type": "travaux",
+    "images": [
+      "uploads/signature/PXL_20250722_104917935.MP.jpg",
+      "uploads/signature/PXL_20250722_111435673.MP.jpg",
+      "uploads/signature/PXL_20250722_111626001.jpg",
+      "uploads/signature/PXL_20250722_145019702.jpg",
+      "uploads/signature/PXL_20250722_145031281.jpg",
+      "uploads/signature/PXL_20250722_204441173.jpg",
+      "uploads/signature/PXL_20250722_204450868.jpg"
+    ],
+    "image": "uploads/signature/PXL_20250722_104917935.MP.jpg",
+    "order": 5
   }
 ]
