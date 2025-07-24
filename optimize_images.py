@@ -2,7 +2,7 @@
 import os
 from PIL import Image
 
-def optimize_image(input_path, output_path, max_width=1920, quality=85):
+def optimize_image(input_path, output_path, max_width=1920, quality=70):
     """Optimise une image en réduisant sa taille et sa qualité"""
     try:
         with Image.open(input_path) as img:
@@ -56,7 +56,8 @@ if __name__ == "__main__":
     # Optimiser tous les dossiers (sauf les backups)
     folders_to_optimize = [
         "public/uploads/deuxieme-visite",
-        "public/uploads/premiere-visite"
+        "public/uploads/premiere-visite",
+        "public/uploads/deuxieme-journee"
     ]
     
     for folder in folders_to_optimize:

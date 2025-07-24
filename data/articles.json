@@ -71,10 +71,23 @@
     "id": "1753724000001",
     "title": "Deuxième jour à la bicoque",
     "date": "2025-07-24",
-    "content": "Deuxième journée bien remplie à la bicoque ! Ce matin, nous avons attendu la visite du technicien ENEDIS pour le raccordement électrique. Après avoir appelé ENEDIS vers midi trente et patienté une demi-heure en ligne, le technicien nous a finalement contactés directement. Il s'est excusé pour le retard : les fortes pluies de la nuit avaient causé des problèmes sur le réseau et les équipes avaient travaillé toute la nuit pour les réparer.\n\nLe technicien est arrivé à 13h30 et a rapidement identifié les problèmes : le compteur était en limitation de puissance qu'il a remise, et le disjoncteur différentiel était défaillant qu'il a remplacé. Après quelques tests avec nos appareils, tout fonctionne parfaitement !\n\nL'après-midi, un plombier est venu pour la pompe de relevage de la cave qui ne fonctionnait plus. Une fois son intervention terminée, nous partirons à la déchetterie pour évacuer tout un tas de choses de la maison.\n\nPetit moment de détente avec Vaya : nous avons joué à \"je te lance une pomme de pin et tu vas la chercher\" - elle adore ce jeu dans notre nouveau jardin !",
+    "content": "Deuxième journée bien remplie à la bicoque ! Ce matin, nous avons attendu la visite du technicien ENEDIS pour le raccordement électrique. Après avoir appelé ENEDIS vers midi trente et patienté une demi-heure en ligne, le technicien nous a finalement contactés directement. Il s'est excusé pour le retard : les fortes pluies de la nuit avaient causé des problèmes sur le réseau et les équipes avaient travaillé toute la nuit pour les réparer.\n\nLe technicien est arrivé à 13h30 et a rapidement identifié les problèmes : le compteur était en limitation de puissance qu'il a remise, et le disjoncteur différentiel était défaillant qu'il a remplacé. Après quelques tests avec nos appareils, tout fonctionne parfaitement !\n\nEn début d'après-midi, petit moment de détente avec Vaya : nous avons joué à \"je te lance une pomme de pin et tu vas la chercher\" - elle adore ce jeu dans notre nouveau jardin !\n\nPuis le plombier est venu pour examiner la pompe de relevage de la cave. Finalement, elle n'était pas en panne : il suffit juste qu'elle soit bien positionnée à la verticale ! Il a également inspecté la salle de bain et nous avons discuté des aménagements nécessaires pour pouvoir se doucher sans mettre de l'eau partout. Il va nous établir un devis pour finaliser cette pièce.\n\nEn fin de journée, petit tour rapide à Égletons pour faire les courses au supermarché et un passage au magasin de bricolage. Nous en avons profité pour découvrir la Brasserie des Remparts : bière locale et pizza au feu de bois - très sympa comme découverte !\n\nRetour à Saint-Merd avec Vaya un peu énervée. Elle ne s'est pas assez dépensée ces derniers jours et a même réussi à sortir du jardin pour aller sur la route ! Heureusement que peu de voitures passent par ici. Demain sera une journée importante : livraisons Amazon prévues pour le frigo, la machine à laver et la vaisselle. Le ramoneur doit également venir pour inspecter notre poêle Godin.",
+    "type": "premiere-semaine",
+    "images": [
+      "deuxieme-journee/IMG-20250724-WA0002.jpg",
+      "deuxieme-journee/PXL_20250724_062759763.jpg"
+    ],
+    "image": "deuxieme-journee/IMG-20250724-WA0002.jpg",
+    "order": 4
+  },
+  {
+    "id": "1753725000001",
+    "title": "Troisième jour à la bicoque",
+    "date": "2025-07-25",
+    "content": "",
     "type": "premiere-semaine",
     "images": [],
     "image": null,
-    "order": 4
+    "order": 5
   }
 ]
