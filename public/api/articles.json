@@ -55,7 +55,7 @@
     "title": "Première journée à la bicoque",
     "date": "2025-07-23",
     "content": "Notre première vraie journée dans notre nouvelle maison ! Après la signature, nous avons passé notre première nuit et commencé à apprivoiser les lieux.\n\nUne journée mémorable entre découverte des recoins de la maison, premiers aménagements et adaptation à notre nouveau cadre de vie corrézien.",
-    "type": "travaux",
+    "type": "premiere-semaine",
     "images": [
       "premiere-journee/PXL_20250723_052538130.jpg",
       "premiere-journee/PXL_20250723_074817945.jpg",
@@ -66,5 +66,15 @@
     ],
     "image": "premiere-journee/PXL_20250723_052538130.jpg",
     "order": 3
+  },
+  {
+    "id": "1753724000001",
+    "title": "Deuxième jour à la bicoque",
+    "date": "2025-07-24",
+    "content": "Deuxième journée bien remplie à la bicoque ! Ce matin, nous attendons la visite des techniciens ENEDIS qui doivent passer avant midi pour le raccordement électrique. Les techniciens pour la fosse septique sont également attendus dans la matinée.\n\nPetite déception : l'un des entrepreneurs pour l'isolation a annulé son rendez-vous. Mais cela nous libère finalement l'après-midi pour aller découvrir Égletons !\n\nPour le déjeuner, nous avons prévu de nous rendre à Marcillac-la-Croisille au bourg pour changer un peu - hier c'était au lac. L'après-midi sera consacré à une sortie pratique : direction la déchetterie avec tout un tas de choses à évacuer de la maison.\n\nUne journée entre obligations administratives et découverte de notre nouveau territoire !",
+    "type": "premiere-semaine",
+    "images": [],
+    "image": null,
+    "order": 4
   }
 ]

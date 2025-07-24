@@ -5,13 +5,18 @@
     "order": 0
   },
   {
-    "id": "travaux",
-    "name": "Travaux",
+    "id": "premiere-semaine",
+    "name": "Première semaine à la bicoque",
     "order": 1
   },
   {
     "id": "decouvertes",
     "name": "Nos découvertes en Corrèze",
     "order": 2
+  },
+  {
+    "id": "travaux",
+    "name": "Travaux",
+    "order": 3
   }
 ]
