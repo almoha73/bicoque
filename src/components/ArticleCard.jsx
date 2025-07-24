@@ -29,13 +29,20 @@ function ArticleCard({
     const images = article.images || (article.image ? [article.image] : [])
     if (!images.length) return null
 
-    const baseUrl = '/uploads/'
+    // Gérer les chemins avec ou sans 'uploads/' au début
+    const baseUrl = ''
     
+    const getImageUrl = (imagePath) => {
+      // Si le chemin commence déjà par 'uploads/', l'utiliser tel quel
+      // Sinon, ajouter '/uploads/' au début
+      return imagePath.startsWith('uploads/') ? `/${imagePath}` : `/uploads/${imagePath}`
+    }
+
     if (images.length === 1) {
       return (
         <div className="mb-4 overflow-hidden rounded-lg">
           <img 
-            src={`${baseUrl}${images[0]}`} 
+            src={getImageUrl(images[0])} 
             alt="Image article"
             className="w-full h-48 object-cover hover:scale-105 transition-transform cursor-pointer"
             onClick={() => onRead(article)}
@@ -51,7 +58,7 @@ function ArticleCard({
           {displayImages.map((image, index) => (
             <img 
               key={index}
-              src={`${baseUrl}${image}`} 
+              src={getImageUrl(image)} 
               alt={`Image ${index + 1}`}
               className="w-full h-20 object-cover hover:opacity-80 transition-opacity cursor-pointer"
               onClick={() => onRead(article)}

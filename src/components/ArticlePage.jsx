@@ -5,7 +5,12 @@ function ArticlePage({ article, onClose }) {
   const [isSlideshow, setIsSlideshow] = useState(false)
 
   const images = article.images || (article.image ? [article.image] : [])
-  const baseUrl = '/uploads/'
+  
+  const getImageUrl = (imagePath) => {
+    // Si le chemin commence déjà par 'uploads/', l'utiliser tel quel
+    // Sinon, ajouter '/uploads/' au début
+    return imagePath.startsWith('uploads/') ? `/${imagePath}` : `/uploads/${imagePath}`
+  }
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -128,7 +133,7 @@ function ArticlePage({ article, onClose }) {
                       onClick={() => openSlideshow(index)}
                     >
                       <img
-                        src={`${baseUrl}${image}`}
+                        src={getImageUrl(image)}
                         alt={`Photo ${index + 1}`}
                         className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -178,7 +183,7 @@ function ArticlePage({ article, onClose }) {
 
             {/* Image */}
             <img
-              src={`${baseUrl}${images[currentImageIndex]}`}
+              src={getImageUrl(images[currentImageIndex])}
               alt={`Photo ${currentImageIndex + 1}`}
               className="max-w-full max-h-full object-contain"
             />
