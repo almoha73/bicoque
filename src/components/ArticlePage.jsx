@@ -70,7 +70,7 @@ function ArticlePage({ article, onClose }) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-palette-5 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-palette-5 to-white animate-fade-in">
       {/* Header */}
       <header className="bg-palette-1 text-palette-5 shadow-lg">
         <div className="container mx-auto px-4 py-4 max-w-4xl">

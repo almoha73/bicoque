@@ -79,8 +79,12 @@ function App() {
         <Hero />
         
         {loading ? (
-          <div className="flex justify-center items-center py-20">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-palette-3"></div>
+          <div className="flex flex-col justify-center items-center py-20 animate-fade-in">
+            <div className="relative">
+              <div className="animate-spin rounded-full h-16 w-16 border-4 border-palette-5"></div>
+              <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-palette-3 absolute top-0 left-0" style={{ animationDirection: 'reverse' }}></div>
+            </div>
+            <p className="text-palette-2 mt-4 animate-pulse-gentle">Chargement de votre journal...</p>
           </div>
         ) : (
           <ArticleList 

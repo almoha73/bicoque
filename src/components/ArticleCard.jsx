@@ -15,7 +15,7 @@ function ArticleCard({ article, onRead, truncateContent }) {
           <img 
             src={getImageUrl(images[0])} 
             alt="Image article"
-            className="w-full h-48 object-cover hover:scale-105 transition-transform"
+            className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
           />
         </div>
       )
@@ -30,7 +30,7 @@ function ArticleCard({ article, onRead, truncateContent }) {
               key={index}
               src={getImageUrl(image)} 
               alt={`Image ${index + 1}`}
-              className="w-full h-20 object-cover hover:opacity-80 transition-opacity"
+              className="w-full h-20 object-cover group-hover:opacity-80 group-hover:scale-105 transition-all duration-300"
             />
           ))}
         </div>
@@ -48,15 +48,15 @@ function ArticleCard({ article, onRead, truncateContent }) {
 
   return (
     <article
-      className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer hover:scale-[1.02]"
+      className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden cursor-pointer hover:scale-[1.03] hover:-translate-y-1 group"
       onClick={() => onRead(article)}
     >
       <div className="p-6">
         {/* Title and date */}
-        <h4 className="text-xl font-bold text-palette-1 mb-2 group-hover:text-palette-2 transition-colors">
+        <h4 className="text-xl font-bold text-palette-1 mb-2 group-hover:text-palette-2 transition-colors duration-300">
           {article.title}
         </h4>
-        <p className="text-palette-2 text-sm mb-4 font-medium">
+        <p className="text-palette-2 text-sm mb-4 font-medium group-hover:text-palette-3 transition-colors duration-300">
           {new Date(article.date).toLocaleDateString('fr-FR', {
             year: 'numeric',
             month: 'long',

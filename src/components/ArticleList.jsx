@@ -31,13 +31,21 @@ function ArticleList({ articles, categories, onRead }) {
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                {categoryArticles.map(article => (
-                  <ArticleCard
+                {categoryArticles.map((article, index) => (
+                  <div
                     key={article.id}
-                    article={article}
-                    onRead={onRead}
-                    truncateContent={truncateContent}
-                  />
+                    className="animate-fade-in-up"
+                    style={{
+                      animationDelay: `${index * 150}ms`,
+                      animationFillMode: 'both'
+                    }}
+                  >
+                    <ArticleCard
+                      article={article}
+                      onRead={onRead}
+                      truncateContent={truncateContent}
+                    />
+                  </div>
                 ))}
               </div>
             )}
