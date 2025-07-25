@@ -84,10 +84,12 @@
     "id": "1753725000001",
     "title": "Troisième jour à la bicoque",
     "date": "2025-07-25",
-    "content": "",
+    "content": "Journée d'attente et de réalisations diverses à la bicoque. Nous avons passé toute la journée à attendre la livraison Amazon du frigo, de la machine à laver et de la vaisselle, mais le transporteur ne s'est jamais présenté. En soirée, j'ai contacté le service client Amazon qui a promis de se rapprocher du transporteur pour qu'il me contacte directement.\n\nHeureusement, le ramoneur lui est bien venu ! Après inspection, bonne nouvelle : le conduit du poêle Godin n'était pas très encrassé, ce qui confirme que l'installation est en bon état.\n\nCôté informatique, j'ai installé une distribution Linux sur mon très vieux Mac Mini pour lui donner une seconde vie. J'en ai profité pour brancher l'ordinateur portable du bureau afin de tester la configuration réseau en prévision de lundi.\n\nGrand ménage également : nous avons entièrement débarrassé le cantou de tous les objets et détritus qui l'encombraient. L'espace est maintenant propre et prêt à être aménagé selon nos goûts.",
     "type": "premiere-semaine",
-    "images": [],
-    "image": null,
+    "images": [
+      "troisieme-journee/PXL_20250725_171359260.jpg"
+    ],
+    "image": "troisieme-journee/PXL_20250725_171359260.jpg",
     "order": 5
   }
 ]
