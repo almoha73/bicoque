@@ -53,15 +53,17 @@ def optimize_folder(folder_path):
             optimize_image(input_path, input_path)
 
 if __name__ == "__main__":
-    # Optimiser tous les dossiers (sauf les backups)
-    folders_to_optimize = [
-        "public/uploads/deuxieme-visite",
-        "public/uploads/premiere-visite",
-        "public/uploads/deuxieme-journee"
-    ]
+    # Détecter automatiquement tous les dossiers d'images
+    uploads_dir = "public/uploads"
     
-    for folder in folders_to_optimize:
-        if os.path.exists(folder):
-            optimize_folder(folder)
+    if os.path.exists(uploads_dir):
+        for folder_name in os.listdir(uploads_dir):
+            folder_path = os.path.join(uploads_dir, folder_name)
+            
+            # Ignorer les dossiers de backup et traiter seulement les dossiers
+            if os.path.isdir(folder_path) and not folder_name.endswith("_backup"):
+                optimize_folder(folder_path)
+    else:
+        print(f"❌ Dossier {uploads_dir} introuvable")
     
     print("\n🎉 Optimisation terminée !")

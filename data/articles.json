@@ -91,5 +91,23 @@
     ],
     "image": "troisieme-journee/PXL_20250725_171359260.jpg",
     "order": 5
+  },
+  {
+    "id": "1753726000001",
+    "title": "Quatrième et cinquième jours à la bicoque",
+    "date": "2025-07-26",
+    "content": "**26 juillet - Journée à Tulle**\n\nDirection Tulle pour une journée de découverte et de chasse aux bonnes affaires ! Nous avons écumé deux brocantes dans la matinée, puis déjeuner en ville à la Brasserie La Rotonde. L'après-midi, balade relaxante au parc Auzelou pour digérer et profiter de la verdure tulliste.\n\nNous sommes allés voir le fameux vaisselier repéré lors d'une précédente sortie, mais après réflexion, il ne nous plaît finalement pas assez pour l'acheter. Ce sera pour une autre fois !\n\nPassage chez BUT à Tulle pour acheter notre aspirateur laveur destiné au rez-de-chaussée de la bicoque. Un achat pratique qui nous sera bien utile pour l'entretien de nos nouveaux sols !
+
+En fin de journée, petit détour par le lac de Marcillac pour une bière bien méritée au bord de l'eau. Nous en avons profité pour réserver une table chez Marcel pour le lendemain midi - on nous en avait dit le plus grand bien.\n\n**27 juillet - Déjeuner chez Marcel et découverte d'Argentat**\n\nExcellent déjeuner chez Marcel ! La réputation n'était pas usurpée. En prime, nous avons sympathisé avec la table d'à côté, un couple charmant avec qui nous avons échangé nos numéros. Ils ont des meubles à vendre qui pourraient nous intéresser pour la bicoque, et ils nous ont donné le tuyau d'une brocante à Argentat.\n\nDirect après le repas, direction Argentat pour cette fameuse brocante ! Joli village avec de magnifiques berges de Dordogne qui serpentent paisiblement. Nous avons flâné le long de la rivière après avoir fait le tour des stands. Un cadre vraiment enchanteur pour terminer ces deux journées de découverte du patrimoine corrézien.",
+    "type": "premiere-semaine",
+    "images": [
+      "quatrieme-journee/PXL_20250727_131715824.jpg",
+      "quatrieme-journee/PXL_20250727_132047560.jpg",
+      "quatrieme-journee/PXL_20250727_132421294.jpg",
+      "quatrieme-journee/PXL_20250727_132501268.jpg",
+      "quatrieme-journee/PXL_20250727_132505475.jpg"
+    ],
+    "image": "quatrieme-journee/PXL_20250727_131715824.jpg",
+    "order": 6
   }
 ]
