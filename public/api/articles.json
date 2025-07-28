@@ -107,5 +107,17 @@
     ],
     "image": "quatrieme-journee/PXL_20250727_131715824.jpg",
     "order": 6
+  },
+  {
+    "id": "1753728000001",
+    "title": "Sixième jour à la bicoque",
+    "date": "2025-07-28",
+    "content": "Premier jour de télétravail à la bicoque ! Réveil matinal à 6h15 pour commencer cette nouvelle routine professionnelle depuis notre nouvelle maison. Sortie pipi matinale avec Vaya dans le jardin, suivie d'un petit déjeuner bien mérité.\n\nVaya a été notre réveille-matin involontaire : elle a réveillé Patrick dès 6h30 ! Pas mal de travail qui m'attendait après une semaine d'absence, mais quel plaisir de pouvoir travailler dans ce cadre.\n\nEn milieu d'après-midi, Patrick est parti à Brive récupérer le fauteuil que nous avions repéré hier sur Le Bon Coin Corrèze. 30€ seulement pour cette belle trouvaille ! Le fauteuil est comme neuf et s'accorde parfaitement dans l'esprit du canapé laissé par l'ancienne propriétaire.\n\nÀ 16h, belle balade avec Vaya toutes les deux sur le chemin de randonnée qui démarre littéralement au bout de notre jardin. Quel bonheur d'avoir la nature à portée de main !\n\nJe serai en repos demain et après-demain car le travail de week-end complet (samedi et dimanche) commence dès ce week-end. Il faut bien récupérer avant !",
+    "type": "premiere-semaine",
+    "images": [
+      "sixieme-journee/PXL_20250728_153843966.jpg"
+    ],
+    "image": "sixieme-journee/PXL_20250728_153843966.jpg",
+    "order": 7
   }
 ]
