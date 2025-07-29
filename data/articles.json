@@ -119,5 +119,20 @@
     ],
     "image": "sixieme-journee/PXL_20250728_153843966.jpg",
     "order": 7
+  },
+  {
+    "id": "1753729000001",
+    "title": "Septième jour à la bicoque",
+    "date": "2025-07-29",
+    "content": "Journée bien remplie pour notre dernier jour de cette première semaine ! Direction la déchetterie d'Égletons ce matin avec la remorque pour nous débarrasser des derniers encombrants de la maison. Retour à la bicoque pour laisser la remorque, puis cap sur Ussel pour une journée shopping et découverte.\n\nPause déjeuner à la Brasserie Le Paris où j'ai savouré un excellent magret sauce myrtilles - un délice ! L'après-midi a été consacrée aux achats pratiques : passage chez Monsieur Bricolage pour une brouette, des sabots de jardin et des bottes, puis direction Intersport pour s'équiper de bonnes chaussures de randonnée et quelques vêtements qui resteront définitivement à la bicoque.\n\nCe soir, je télécharge les cartes GPX du coin pour préparer nos futures aventures. À Saint-Merd, il y a trois randonnées de 4, 10 et 12 km que nous ferons dès que possible !\n\nDemain, retour à Bordeaux. Patrick reprend le travail jeudi et lundi, et moi ce sera non-stop jusqu'à lundi inclus. Cette première semaine à la bicoque se termine, mais que de souvenirs déjà !",
+    "type": "premiere-semaine",
+    "images": [
+      "septieme-journee/PXL_20250729_094658144.jpg",
+      "septieme-journee/PXL_20250729_094721301.jpg",
+      "septieme-journee/PXL_20250729_094735817.jpg",
+      "septieme-journee/PXL_20250729_094756615.jpg"
+    ],
+    "image": "septieme-journee/PXL_20250729_094658144.jpg",
+    "order": 8
   }
 ]
