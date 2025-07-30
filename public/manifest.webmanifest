@@ -1,0 +1,16 @@
+{
+  "name": "Journal de Bord - Notre Bicoque en Corrèze",
+  "short_name": "Bicoque",
+  "description": "Journal de nos aventures dans notre maison en Corrèze",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
