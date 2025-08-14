@@ -10,13 +10,18 @@
     "order": 1
   },
   {
+    "id": "deuxieme-sejour",
+    "name": "Deuxième séjour à la bicoque",
+    "order": 2
+  },
+  {
     "id": "decouvertes",
     "name": "Nos découvertes en Corrèze",
-    "order": 2
+    "order": 3
   },
   {
     "id": "travaux",
     "name": "Travaux",
-    "order": 3
+    "order": 4
   }
 ]
