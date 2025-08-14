@@ -143,5 +143,26 @@
     "type": "premiere-semaine",
     "images": [],
     "order": 9
+  },
+  {
+    "id": "1753731000001",
+    "title": "Deuxième séjour à la bicoque",
+    "date": "2025-08-14",
+    "content": "Nous sommes de retour depuis le 5 août ! Ces derniers jours ont été consacrés à l'ameublement de notre nouveau chez-nous. Patrick s'est montré particulièrement actif : il est allé chercher la maie à Brive ainsi que la table, les bancs et les deux chaises. Il a également fait le voyage jusqu'à Tarnac, dans le plateau de Millevaches, pour récupérer le buffet.\n\nDe mon côté, je reprends le rythme du travail. Dimanche, jour de repos bien mérité, nous avons déjeuné à Égletons. Au lac, c'est la cohue habituelle jusqu'à la mi-août ! Nous en avons profité pour passer à la mairie afin de nous présenter officiellement. Belle rencontre avec madame la maire et son adjointe, qui se trouve être l'épouse du député Pranchère.\n\nCette semaine, je suis en équipe du matin et je travaille évidemment le 15 août. Ensuite, quelques jours de repos grâce à un RTT avant de reprendre jeudi prochain.\n\nDimanche, sortie prévue avec Vaya ! J'ai déniché une compagne de balade canine via un groupe Facebook dédié aux promenades de chiens en Corrèze. Cette habitante de Saint-Merd-de-Lapleau a deux compagnons : un bouledogue français et un berger australien. Pour cette première rencontre, nous ferons la balade avec le bouledogue. Vaya va être ravie d'avoir enfin un copain pour se dégourdir les pattes !",
+    "type": "deuxieme-sejour",
+    "images": [
+      "deuxieme-sejour/PXL_20250805_164236100.jpg",
+      "deuxieme-sejour/PXL_20250805_164512588.jpg",
+      "deuxieme-sejour/PXL_20250805_170020771.jpg",
+      "deuxieme-sejour/PXL_20250805_170036140.MP.jpg",
+      "deuxieme-sejour/PXL_20250807_124931403.jpg",
+      "deuxieme-sejour/PXL_20250807_192946619.jpg",
+      "deuxieme-sejour/PXL_20250810_110845931.MP.jpg",
+      "deuxieme-sejour/PXL_20250813_145331090.MP.jpg",
+      "deuxieme-sejour/PXL_20250813_171410163.jpg",
+      "deuxieme-sejour/PXL_20250814_161853662.jpg"
+    ],
+    "image": "deuxieme-sejour/PXL_20250805_164236100.jpg",
+    "order": 10
   }
 ]

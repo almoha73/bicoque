@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
   }, 100);
 });
 
-// URL de base de l'API backend
-const API_BASE_URL = '/api/articles';
-const CATEGORIES_API_URL = '/api/categories';
+// URL de base pour les fichiers JSON statiques
+const API_BASE_URL = '/api/articles.json';
+const CATEGORIES_API_URL = '/api/categories.json';
 const UPLOADS_BASE_URL = '/uploads/';
 
 // Éléments du DOM pour l'ajout/édition d'articles
