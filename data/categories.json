@@ -15,13 +15,18 @@
     "order": 2
   },
   {
+    "id": "septembre-octobre",
+    "name": "Septembre-octobre 2025",
+    "order": 3
+  },
+  {
     "id": "decouvertes",
     "name": "Nos découvertes en Corrèze",
-    "order": 3
+    "order": 4
   },
   {
     "id": "travaux",
     "name": "Travaux",
-    "order": 4
+    "order": 5
   }
 ]

@@ -164,5 +164,110 @@
     ],
     "image": "deuxieme-sejour/PXL_20250805_164236100.jpg",
     "order": 10
+  },
+  {
+    "id": "1753824000001",
+    "title": "Livraison stères de bois pour l'hiver",
+    "date": "2025-08-24",
+    "content": "Grande livraison aujourd'hui ! Nous avons reçu 8 stères de bois pour notre chauffage de cet hiver. C'est un investissement important mais indispensable pour affronter les froids corréziens dans notre maison en pierre.\n\nIl nous a fallu 24 heures de travail pour tout stocker correctement ! Nous avons réparti le bois entre deux endroits : une partie dans l'abri situé derrière la petite dépendance, et le reste dans le garage. Un vrai marathon, mais au moins nous voilà parés pour l'hiver.\n\nLe bois est de belle qualité et bien sec. Nous avons pris soin de l'empiler soigneusement pour optimiser l'espace et assurer une bonne ventilation. Notre poêle Godin va pouvoir nous tenir bien au chaud durant les longues soirées hivernales !",
+    "type": "deuxieme-sejour",
+    "images": [
+      "bois-hiver/IMG-20250824-WA0001.jpg",
+      "bois-hiver/IMG-20250824-WA0002.jpg",
+      "bois-hiver/IMG-20250824-WA0003.jpg"
+    ],
+    "image": "bois-hiver/IMG-20250824-WA0001.jpg",
+    "order": 11
+  },
+  {
+    "id": "1753826000001",
+    "title": "Promenade canine avec Oslo et Célia",
+    "date": "2025-08-26",
+    "content": "Belle rencontre aujourd'hui avec Célia, une jeune maman qui vit à Saint-Merd-de-Lapleau ! Elle a deux adorables compagnons : Buzz, un bouledogue français, et Oslo, un magnifique berger australien.\n\nNous avons fait une superbe balade autour de chez elle avec Oslo et Vaya. Quel plaisir de voir nos deux chiens s'entendre à merveille ! Oslo est vraiment un chien très sympa, énergique comme tous les bergers australiens, et parfait compagnon de jeu pour notre Vaya.\n\nCette rencontre via le groupe Facebook des promeneurs de chiens corréziens s'avère être un vrai succès. Célia est charmante et il est rassurant de savoir que Vaya peut désormais avoir des copains pour se dégourdir les pattes lors de nos séjours à la bicoque !",
+    "type": "deuxieme-sejour",
+    "images": [
+      "oslo/PXL_20250826_150936280.jpg",
+      "oslo/Messenger_creation_B56E0CC6-FA3A-4EBD-9467-EA50D464A365~2.jpeg",
+      "oslo/Screenshot_20250826-175435.png"
+    ],
+    "image": "oslo/PXL_20250826_150936280.jpg",
+    "order": 12
+  },
+  {
+    "id": "1753902000001",
+    "title": "Débâchage",
+    "date": "2025-09-02",
+    "content": "Retour à Saint-Merd-de-Lapleau ce 2 septembre pour quinze jours de vacances bien méritées ! Le maçon doit venir demain matin pour examiner l'état de la chape et planifier la suite des travaux.\n\nNotre mission de cet après-midi : enlever enfin la bâche et la structure en bois installées il y a dix ans, quand les travaux avaient été abandonnés. Dix longues années pendant lesquelles les ronces ont proliféré sous cette protection de fortune...\n\nPatrick s'est donné du mal pour déclouer certaines planches récalcitrantes, tandis que d'autres, pourries par le temps et l'humidité, se brisaient d'elles-mêmes. Un travail laborieux mais nécessaire pour libérer cet espace et permettre aux futurs travaux de reprendre dans de bonnes conditions.",
+    "type": "travaux",
+    "images": [
+      "travaux/debachage/PXL_20250902_115708817.jpg",
+      "travaux/debachage/PXL_20250902_115741412.jpg",
+      "travaux/debachage/PXL_20250902_120411778.jpg",
+      "travaux/debachage/PXL_20250902_134337490.jpg",
+      "travaux/debachage/PXL_20250902_134412022.jpg",
+      "travaux/debachage/PXL_20250902_142955476.jpg"
+    ],
+    "image": "travaux/debachage/PXL_20250902_115708817.jpg",
+    "order": 13
+  },
+  {
+    "id": "1753909000001",
+    "title": "Septembre-octobre 2025",
+    "date": "2025-09-09",
+    "content": "Ces dernières semaines à la bicoque sont bien remplies ! \n\n**Marché de Marcillac-la-Croisille** : Zouille commence vraiment à être à l'aise ! Elle profite du trajet à vélo le nez au vent dans son sac sur mon dos. Le marché du mardi nous régale avec ses excellents produits locaux : mique, millassou, pâté de pommes de terre, fromages, et surtout ces tomates qui ont un vrai goût de tomates !\n\n**Balades quotidiennes** : Nos promenades au petit ruisseau avec Vaya sont devenues un rituel. Ces moments nous offrent parfois de magnifiques couchers de soleil à photographier. Hier soir, moment magique : nous avons croisé une famille de chevreuils - le mâle, la femelle et leur faon - sous le grand chêne au milieu du champ. Un spectacle inoubliable !\n\n**Jardinage** : Le jour du débâchage de la terrasse, nous avons aussi planté en pleine terre le laurier ramené de Bordeaux. Il me reste encore à planter la verveine. Ce ne sont pas vraiment les plantes de prédilection de la région, mais nous espérons qu'elles s'adapteront !\n\n**Problèmes de cave** : Les grosses pluies de ces derniers jours ont inondé la cave. Nous espérons qu'une partie du problème se résoudra une fois la terrasse terminée. Sinon, il faudra reprendre une partie de l'étanchéité en bas de l'escalier menant à la nouvelle cave.",
+    "type": "septembre-octobre",
+    "images": [
+      "divers/coucher-soleil.jpg",
+      "divers/laurier.jpg",
+      "divers/vue-soir.jpg"
+    ],
+    "image": "divers/coucher-soleil.jpg",
+    "order": 0
+  },
+  {
+    "id": "1753820000001",
+    "title": "Randonnée en famille avec Sylvain et Sylvie",
+    "date": "2025-08-20",
+    "content": "Quelle belle surprise ! Sylvain et Sylvie étaient de passage en Corrèze et nous en avons profité pour organiser une superbe randonnée ensemble : le viaduc des Rochers Noirs au départ de Soursac.\n\nUne randonnée de 12 km que nous avons tous savourée, y compris Vaya qui nous a suivis sans aucun problème ! Nous avons eu un temps absolument idéal pour cette escapade en famille. Le point de vue lors de notre pique-nique à mi-parcours était tout simplement incroyable - ces paysages corréziens nous émerveillent toujours autant.\n\nComble de l'ironie : j'étais plus fatiguée que Vaya à l'arrivée ! Notre chienne a vraiment une forme olympique. Nous avons terminé cette belle journée par une petite bière bien méritée à Soursac avant de nous séparer. Un moment parfait de partage en famille au cœur de notre nouvelle région.",
+    "type": "decouvertes",
+    "images": [
+      "rando-sylvain/PXL_20250820_082609034.jpg",
+      "rando-sylvain/PXL_20250820_100000301~2.jpg",
+      "rando-sylvain/PXL_20250820_100004935.jpg",
+      "rando-sylvain/PXL_20250820_101942315~2.jpg",
+      "rando-sylvain/PXL_20250820_105623542.jpg",
+      "rando-sylvain/PXL_20250820_110106367.jpg",
+      "rando-sylvain/PXL_20250820_112702718.jpg",
+      "rando-sylvain/PXL_20250820_112712890.jpg",
+      "rando-sylvain/PXL_20250820_112732946.jpg",
+      "rando-sylvain/PXL_20250820_112741482.jpg",
+      "rando-sylvain/PXL_20250820_112742487.jpg",
+      "rando-sylvain/PXL_20250820_112835474.jpg",
+      "rando-sylvain/PXL_20250820_113124523.jpg"
+    ],
+    "image": "rando-sylvain/PXL_20250820_082609034.jpg",
+    "order": 0
+  },
+  {
+    "id": "1753906000001",
+    "title": "Visite de Collonges-la-Rouge",
+    "date": "2025-09-06",
+    "content": "Belle sortie aujourd'hui ! Après avoir fait un tour chez Emmaüs à Brive-la-Gaillarde où nous avons trouvé une table de nuit parfaite pour poser notre micro-ondes, direction Collonges-la-Rouge pour découvrir ce village classé parmi les plus beaux de France.\n\nEt effectivement, le village est absolument magnifique ! Tout construit en grès rouge, parfaitement conservé, avec un charme authentique qui nous a conquis. Les ruelles pavées, les maisons à tourelles, les échauguettes... un véritable voyage dans le temps ! Le village regorge de boutiques proposant des produits artisanaux locaux.\n\nPour le déjeuner, nous avons testé le restaurant Le Cantou et quelle excellente surprise ! Une cuisine familiale de qualité avec une omelette aux cèpes absolument délicieuse. En dessert, nous avons goûté la flognarde, spécialité locale, qui était tout simplement succulente. Le rapport qualité-prix-quantité était parfait, nous avons été très agréablement surpris. Une belle découverte culinaire pour accompagner cette visite culturelle !",
+    "type": "decouvertes",
+    "images": [
+      "collonges/IMG-20250906-WA0002.jpg",
+      "collonges/IMG-20250906-WA0003.jpg",
+      "collonges/PXL_20250906_093843483~2.jpg",
+      "collonges/PXL_20250906_093936249~2.jpg",
+      "collonges/PXL_20250906_094201507~2.jpg",
+      "collonges/PXL_20250906_095052772.jpg",
+      "collonges/PXL_20250906_113315189.jpg",
+      "collonges/PXL_20250906_114005865~2.jpg",
+      "collonges/gemini-2.5-flash-image-preview (nano-banana)_Enlève_toutes_les_pe.jpg",
+      "collonges/undefined_Enlève_les_chaises_a.jpg",
+      "collonges/undefined_Enlève_les_personnes.jpg"
+    ],
+    "image": "collonges/PXL_20250906_093843483~2.jpg",
+    "order": 1
   }
 ]
