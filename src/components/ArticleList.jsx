@@ -142,23 +142,48 @@ function ArticleList({ articles, categories, onRead }) {
               <p className="text-palette-2 mt-2">Créations musicales inspirées par la bicoque</p>
             </div>
 
-            <div className="bg-white/80 rounded-xl p-6 shadow-md">
-              <div className="flex flex-col md:flex-row items-center gap-6">
-                <div className="w-24 h-24 bg-gradient-to-br from-palette-3 to-palette-2 rounded-full flex items-center justify-center text-4xl shadow-lg">
-                  🎵
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* O' Ruisseau */}
+              <div className="bg-white/80 rounded-xl p-6 shadow-md">
+                <div className="flex flex-col items-center gap-4">
+                  <div className="w-20 h-20 bg-gradient-to-br from-palette-3 to-palette-2 rounded-full flex items-center justify-center text-3xl shadow-lg">
+                    🎵
+                  </div>
+                  <div className="text-center">
+                    <h4 className="text-xl font-bold text-palette-1 mb-2">O' Ruisseau</h4>
+                    <p className="text-palette-2 text-sm mb-4">Une chanson sur notre petit ruisseau préféré, où nous aimons tant nous promener avec Vaya</p>
+                    <audio
+                      controls
+                      className="w-full"
+                      preload="metadata"
+                    >
+                      <source src="/uploads/audio/O' Ruisseau .mp3" type="audio/mpeg" />
+                      Votre navigateur ne supporte pas l'élément audio.
+                    </audio>
+                    <p className="text-xs text-gray-400 mt-2">Créé avec Suno AI</p>
+                  </div>
                 </div>
-                <div className="flex-1 text-center md:text-left">
-                  <h4 className="text-xl font-bold text-palette-1 mb-2">O' Ruisseau</h4>
-                  <p className="text-palette-2 mb-4">Une chanson sur notre petit ruisseau préféré, où nous aimons tant nous promener avec Vaya</p>
-                  <audio
-                    controls
-                    className="w-full max-w-md"
-                    preload="metadata"
-                  >
-                    <source src="/uploads/audio/O' Ruisseau .mp3" type="audio/mpeg" />
-                    Votre navigateur ne supporte pas l'élément audio.
-                  </audio>
-                  <p className="text-xs text-gray-400 mt-2">Créé avec Suno AI</p>
+              </div>
+
+              {/* Whispering Pines */}
+              <div className="bg-white/80 rounded-xl p-6 shadow-md">
+                <div className="flex flex-col items-center gap-4">
+                  <div className="w-20 h-20 bg-gradient-to-br from-palette-2 to-palette-1 rounded-full flex items-center justify-center text-3xl shadow-lg">
+                    🌲
+                  </div>
+                  <div className="text-center">
+                    <h4 className="text-xl font-bold text-palette-1 mb-2">Whispering Pines</h4>
+                    <p className="text-palette-2 text-sm mb-4">Les murmures des pins corréziens qui entourent la bicoque</p>
+                    <audio
+                      controls
+                      className="w-full"
+                      preload="metadata"
+                    >
+                      <source src="/uploads/audio/Whispering Pines .mp3" type="audio/mpeg" />
+                      Votre navigateur ne supporte pas l'élément audio.
+                    </audio>
+                    <p className="text-xs text-gray-400 mt-2">Créé avec Suno AI</p>
+                  </div>
                 </div>
               </div>
             </div>
