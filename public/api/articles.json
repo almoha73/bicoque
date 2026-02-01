@@ -372,5 +372,40 @@
     ],
     "image": "gimel/PXL_20260114_113153803.jpg",
     "order": 1
+  },
+  {
+    "id": "1730800000001",
+    "title": "Novembre à la bicoque : Sédières, le ruisseau et les premières neiges",
+    "date": "2025-11-22",
+    "content": "Ce mois de novembre nous a offert de beaux moments à la bicoque ! Entre nos balades habituelles à Sédières avec Vaya, les promenades au petit ruisseau et la surprise des premières neiges sur le jardin, nous avons capturé plein de souvenirs.\n\nVaya profite à fond de chaque sortie, que ce soit pour patauger dans le ruisseau ou courir dans la neige fraîche. Notre petite chienne adore cette vie corrézienne !\n\nLe jardin sous son manteau blanc était vraiment magnifique. Un avant-goût de l'hiver qui s'annonce, et une bonne raison de se réchauffer ensuite devant le poêle Godin.",
+    "type": "novembre-decembre-2025",
+    "images": [
+      "photos=novembre-2025/PXL_20251104_152206375.jpg",
+      "photos=novembre-2025/PXL_20251105_151751533.jpg",
+      "photos=novembre-2025/PXL_20251105_175036298.jpg",
+      "photos=novembre-2025/IMG-20251106-WA0000.jpg",
+      "photos=novembre-2025/PXL_20251111_192711019.jpg",
+      "photos=novembre-2025/PXL_20251111_192730905.MP.jpg",
+      "photos=novembre-2025/PXL_20251112_151139201.jpg",
+      "photos=novembre-2025/PXL_20251117_155400135.mp4",
+      "photos=novembre-2025/PXL_20251117_161135453.MP.jpg",
+      "photos=novembre-2025/PXL_20251117_161141783.MP.jpg",
+      "photos=novembre-2025/PXL_20251117_161203002.MP.jpg",
+      "photos=novembre-2025/PXL_20251117_161204997.MP.jpg",
+      "photos=novembre-2025/PXL_20251117_161206579.MP.jpg",
+      "photos=novembre-2025/PXL_20251117_161212994.MP.jpg",
+      "photos=novembre-2025/IMG-20251118-WA0002.jpg",
+      "photos=novembre-2025/PXL_20251119_151325480.mp4",
+      "photos=novembre-2025/IMG-20251121-WA0000.jpg",
+      "photos=novembre-2025/PXL_20251122_065757419.MP.jpg",
+      "photos=novembre-2025/PXL_20251122_065803558.MP.jpg",
+      "photos=novembre-2025/PXL_20251122_065838965.jpg",
+      "photos=novembre-2025/PXL_20251122_065846032.jpg",
+      "photos=novembre-2025/PXL_20251122_085953651.jpg",
+      "photos=novembre-2025/PXL_20251122_090000451.jpg",
+      "photos=novembre-2025/Screenshot_20251122-192650.png"
+    ],
+    "image": "photos=novembre-2025/PXL_20251122_065757419.MP.jpg",
+    "order": 0
   }
 ]
