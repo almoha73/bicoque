@@ -15,8 +15,13 @@
     "order": 2
   },
   {
+    "id": "novembre-decembre-2025",
+    "name": "Novembre-Décembre 2025",
+    "order": 3
+  },
+  {
     "id": "janvier-2026",
     "name": "Janvier 2026",
-    "order": 3
+    "order": 4
   }
 ]
