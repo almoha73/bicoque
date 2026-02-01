@@ -10,13 +10,21 @@ function ArticleCard({ article, onRead, truncateContent }) {
     return videoExtensions.some(ext => path.toLowerCase().endsWith(ext))
   }
 
+  const isYouTube = (path) => {
+    return path.startsWith('youtube:')
+  }
+
+  const isAnyVideo = (path) => {
+    return isVideo(path) || isYouTube(path)
+  }
+
   const renderImages = () => {
     const media = article.images || (article.image ? [article.image] : [])
     if (!media.length) return null
 
     // Filtrer pour n'afficher que les images (pas les vidéos) dans l'aperçu
-    const images = media.filter(m => !isVideo(m))
-    const videoCount = media.filter(m => isVideo(m)).length
+    const images = media.filter(m => !isAnyVideo(m))
+    const videoCount = media.filter(m => isAnyVideo(m)).length
 
     if (!images.length) {
       // S'il n'y a que des vidéos, afficher un placeholder
