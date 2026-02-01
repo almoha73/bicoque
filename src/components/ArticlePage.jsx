@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import PlayIcon from './PlayIcon'
 
 function ArticlePage({ article, onClose }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -160,9 +161,7 @@ function ArticlePage({ article, onClose }) {
                             className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                           />
                           <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
-                            <span className="text-red-600 text-5xl drop-shadow-lg">
-                              ▶
-                            </span>
+                            <PlayIcon color="red" />
                           </div>
                         </>
                       ) : isVideo(item) ? (
