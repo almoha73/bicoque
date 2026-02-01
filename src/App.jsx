@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import SearchBar from './components/SearchBar'
 import ArticleList from './components/ArticleList'
 import ArticlePage from './components/ArticlePage'
 import './index.css'
@@ -77,7 +78,14 @@ function App() {
       
       <main className="container mx-auto px-4 py-8 max-w-7xl">
         <Hero />
-        
+
+        {!loading && (
+          <SearchBar
+            articles={articles}
+            onSelectArticle={openArticlePage}
+          />
+        )}
+
         {loading ? (
           <div className="flex flex-col justify-center items-center py-20 animate-fade-in">
             <div className="relative">
