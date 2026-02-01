@@ -34,7 +34,7 @@ function ArticleList({ articles, categories, onRead }) {
     .map(year => {
       const yearCategories = Object.values(groupedByYear[year])
         .filter(category => category.id)
-        .sort((a, b) => (a.order || 0) - (b.order || 0))
+        .sort((a, b) => (b.order || 0) - (a.order || 0)) // Plus récent en premier
         .map(category => ({
           ...category,
           // Sort articles within each category by date (newest first)
