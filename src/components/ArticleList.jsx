@@ -71,6 +71,17 @@ function ArticleList({ articles, categories, onRead }) {
               </div>
             </a>
           ))}
+          {/* Bonus */}
+          <a
+            href="#bonus"
+            className="block bg-gradient-to-br from-palette-3 to-palette-2 rounded-xl shadow-lg p-4 text-center transition-all duration-300 hover:shadow-2xl hover:scale-105 @container animate-fade-in-up"
+            style={{ animationDelay: `${sortedAndGroupedData.length * 100}ms`, animationFillMode: 'both' }}
+          >
+            <div className="font-bold text-white text-3xl @[7rem]:text-5xl">Bonus</div>
+            <div className="text-white/80 text-xs @[7rem]:text-sm mt-1">
+              Musique<br/>et surprises
+            </div>
+          </a>
         </div>
       </nav>
 
@@ -117,6 +128,42 @@ function ArticleList({ articles, categories, onRead }) {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* --- Section Bonus --- */}
+      <div id="bonus" className="scroll-mt-24 mt-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-palette-1/80 mb-8 py-2">Bonus</h2>
+        <div className="space-y-12">
+          <section className="bg-gradient-to-br from-palette-3/20 to-palette-2/20 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg">
+            <div className="mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-palette-1">
+                Musique maison
+              </h3>
+              <p className="text-palette-2 mt-2">Créations musicales inspirées par la bicoque</p>
+            </div>
+
+            <div className="bg-white/80 rounded-xl p-6 shadow-md">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <div className="w-24 h-24 bg-gradient-to-br from-palette-3 to-palette-2 rounded-full flex items-center justify-center text-4xl shadow-lg">
+                  🎵
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h4 className="text-xl font-bold text-palette-1 mb-2">O' Ruisseau</h4>
+                  <p className="text-palette-2 mb-4">Une chanson sur notre petit ruisseau préféré, où nous aimons tant nous promener avec Vaya</p>
+                  <audio
+                    controls
+                    className="w-full max-w-md"
+                    preload="metadata"
+                  >
+                    <source src="/uploads/audio/O' Ruisseau .mp3" type="audio/mpeg" />
+                    Votre navigateur ne supporte pas l'élément audio.
+                  </audio>
+                  <p className="text-xs text-gray-400 mt-2">Créé avec Suno AI</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </>
   )
