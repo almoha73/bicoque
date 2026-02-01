@@ -1,32 +1,22 @@
 [
   {
-    "id": "achats",
-    "name": "Achats",
+    "id": "mai-juillet-2025",
+    "name": "Mai-Juillet 2025 : L'achat et la première semaine",
     "order": 0
   },
   {
-    "id": "premiere-semaine",
-    "name": "Première semaine à la bicoque",
+    "id": "aout-2025",
+    "name": "Août 2025",
     "order": 1
   },
   {
-    "id": "deuxieme-sejour",
-    "name": "Deuxième séjour à la bicoque",
+    "id": "septembre-octobre-2025",
+    "name": "Septembre-Octobre 2025",
     "order": 2
   },
   {
-    "id": "septembre-octobre",
-    "name": "Septembre-octobre 2025",
+    "id": "janvier-2026",
+    "name": "Janvier 2026",
     "order": 3
-  },
-  {
-    "id": "decouvertes",
-    "name": "Nos découvertes en Corrèze",
-    "order": 4
-  },
-  {
-    "id": "travaux",
-    "name": "Travaux",
-    "order": 5
   }
 ]

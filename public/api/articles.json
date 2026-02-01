@@ -4,7 +4,7 @@
     "title": "Première visite de la maison",
     "date": "2025-05-14",
     "content": "Nous avons enfin visité notre future maison en Corrèze ! Une belle bâtisse en pierre avec un potentiel énorme. Les murs sont solides, la charpente en bon état, mais il y aura du travail pour la remettre au goût du jour.\n\nL'emplacement est idéal : au calme, avec une vue dégagée sur la campagne corrézienne. Le jardin est spacieux et nous imaginons déjà les aménagements possibles.",
-    "type": "achats",
+    "type": "mai-juillet-2025",
     "images": [
       "premiere-visite/20250514_153021.jpg",
       "premiere-visite/20250514_153043.jpg",
@@ -19,7 +19,7 @@
     "title": "Deuxième visite",
     "date": "2025-07-02",
     "content": "Retour à la maison pour une seconde visite plus approfondie. Nous avons pu examiner les détails que nous avions manqués lors de la première visite.\n\nNous avons pris des mesures, vérifié l'état des installations et commencé à planifier concrètement les travaux à réaliser.",
-    "type": "achats",
+    "type": "mai-juillet-2025",
     "images": [
       "deuxieme-visite/IMG-20250702-WA0004.jpg",
       "deuxieme-visite/IMG-20250702-WA0005.jpg",
@@ -36,7 +36,7 @@
     "title": "Signature de l'acte définitif",
     "date": "2025-07-22",
     "content": "Grande journée ! Avant de nous rendre chez le notaire, nous avons déposé quelques affaires et la remorque dans la maison. Après la signature tant attendue, nous avons fait un arrêt à Marcillac pour acheter de quoi célébrer - arrivées juste à temps avant la fermeture à 12h30 !\n\nApéritif improvisé au vin rouge dans des mugs, faute de verres. L'après-midi a été consacrée au grand ménage et au débarras des nombreux cartons laissés par l'ancienne propriétaire. Orange est venu installer la box internet à 15h30, puis Erten le maçon a fait le tour de la propriété avec nous pour évaluer les futurs travaux.\n\nBonne surprise : nous avons découvert deux lits de camp très confortables dans la maison ! Installés devant le cantou pour notre première nuit, avec Vaya notre chien sur le canapé. Nuit très paisible dans notre nouvelle maison.",
-    "type": "achats",
+    "type": "mai-juillet-2025",
     "images": [
       "signature/PXL_20250722_104917935.MP.jpg",
       "signature/PXL_20250722_111435673.MP.jpg",
@@ -54,7 +54,7 @@
     "title": "Première journée à la bicoque",
     "date": "2025-07-23",
     "content": "Notre première vraie journée dans notre nouvelle maison ! Après la signature, nous avons passé notre première nuit et commencé à apprivoiser les lieux.\n\nUne journée mémorable entre découverte des recoins de la maison, premiers aménagements et adaptation à notre nouveau cadre de vie corrézien.",
-    "type": "premiere-semaine",
+    "type": "mai-juillet-2025",
     "images": [
       "premiere-journee/PXL_20250723_052538130.jpg",
       "premiere-journee/PXL_20250723_074817945.jpg",
@@ -71,12 +71,12 @@
     "title": "Deuxième jour à la bicoque",
     "date": "2025-07-24",
     "content": "Deuxième journée bien remplie à la bicoque ! Ce matin, nous avons attendu la visite du technicien ENEDIS pour le raccordement électrique. Après avoir appelé ENEDIS vers midi trente et patienté une demi-heure en ligne, le technicien nous a finalement contactés directement. Il s'est excusé pour le retard : les fortes pluies de la nuit avaient causé des problèmes sur le réseau et les équipes avaient travaillé toute la nuit pour les réparer.\n\nLe technicien est arrivé à 13h30 et a rapidement identifié les problèmes : le compteur était en limitation de puissance qu'il a remise, et le disjoncteur différentiel était défaillant qu'il a remplacé. Après quelques tests avec nos appareils, tout fonctionne parfaitement !\n\nEn début d'après-midi, petit moment de détente avec Vaya : nous avons joué à \"je te lance une pomme de pin et tu vas la chercher\" - elle adore ce jeu dans notre nouveau jardin !\n\nPuis le plombier est venu pour examiner la pompe de relevage de la cave. Finalement, elle n'était pas en panne : il suffit juste qu'elle soit bien positionnée à la verticale ! Il a également inspecté la salle de bain et nous avons discuté des aménagements nécessaires pour pouvoir se doucher sans mettre de l'eau partout. Il va nous établir un devis pour finaliser cette pièce.\n\nEn fin de journée, petit tour rapide à Égletons pour faire les courses au supermarché et un passage au magasin de bricolage. Nous en avons profité pour découvrir la Brasserie des Remparts : bière locale et pizza au feu de bois - très sympa comme découverte !\n\nRetour à Saint-Merd avec Vaya un peu énervée. Elle ne s'est pas assez dépensée ces derniers jours et a même réussi à sortir du jardin pour aller sur la route ! Heureusement que peu de voitures passent par ici. Demain sera une journée importante : livraisons Amazon prévues pour le frigo, la machine à laver et la vaisselle. Le ramoneur doit également venir pour inspecter notre poêle Godin.",
-    "type": "premiere-semaine",
+    "type": "mai-juillet-2025",
     "images": [
       "deuxieme-journee/IMG-20250724-WA0002.jpg",
       "deuxieme-journee/PXL_20250724_062759763.jpg"
     ],
-    "image": "deuxieme-journee/IMG-20250724-WA0002.jpg",
+    "image": "deuxieme-journee/IMG-20250724_WA0002.jpg",
     "order": 4
   },
   {
@@ -84,7 +84,7 @@
     "title": "Troisième jour à la bicoque",
     "date": "2025-07-25",
     "content": "Journée d'attente et de réalisations diverses à la bicoque. Nous avons passé toute la journée à attendre la livraison Amazon du frigo, de la machine à laver et de la vaisselle, mais le transporteur ne s'est jamais présenté. En soirée, j'ai contacté le service client Amazon qui a promis de se rapprocher du transporteur pour qu'il me contacte directement.\n\nHeureusement, le ramoneur lui est bien venu ! Après inspection, bonne nouvelle : le conduit du poêle Godin n'était pas très encrassé, ce qui confirme que l'installation est en bon état.\n\nCôté informatique, j'ai installé une distribution Linux sur mon très vieux Mac Mini pour lui donner une seconde vie. J'en ai profité pour brancher l'ordinateur portable du bureau afin de tester la configuration réseau en prévision de lundi.\n\nGrand ménage également : nous avons entièrement débarrassé le cantou de tous les objets et détritus qui l'encombraient. L'espace est maintenant propre et prêt à être aménagé selon nos goûts.",
-    "type": "premiere-semaine",
+    "type": "mai-juillet-2025",
     "images": [
       "troisieme-journee/PXL_20250725_171359260.jpg"
     ],
@@ -95,8 +95,8 @@
     "id": "1753726000001",
     "title": "Quatrième et cinquième jours à la bicoque",
     "date": "2025-07-26",
-    "content": "**26 juillet - Journée à Tulle**\n\nDirection Tulle pour une journée de découverte et de chasse aux bonnes affaires ! Nous avons écumé deux brocantes dans la matinée, puis déjeuner en ville à la Brasserie La Rotonde. L'après-midi, balade relaxante au parc Auzelou pour digérer et profiter de la verdure tulliste.\n\nNous sommes allés voir le fameux vaisselier repéré lors d'une précédente sortie, mais après réflexion, il ne nous plaît finalement pas assez pour l'acheter. Ce sera pour une autre fois !\n\nPassage chez BUT à Tulle pour acheter notre aspirateur laveur destiné au rez-de-chaussée de la bicoque. Un achat pratique qui nous sera bien utile pour l'entretien de nos nouveaux sols !\n\nEn fin de journée, petit détour par le lac de Marcillac pour une bière bien méritée au bord de l'eau. Nous en avons profité pour réserver une table chez Marcel pour le lendemain midi - on nous en avait dit le plus grand bien.\n\n**27 juillet - Déjeuner chez Marcel et découverte d'Argentat**\n\nExcellent déjeuner chez Marcel ! La réputation n'était pas usurpée. En prime, nous avons sympathisé avec la table d'à côté, un couple charmant avec qui nous avons échangé nos numéros. Ils ont des meubles à vendre qui pourraient nous intéresser pour la bicoque, et ils nous ont donné le tuyau d'une brocante à Argentat.\n\nDirect après le repas, direction Argentat pour cette fameuse brocante ! Joli village avec de magnifiques berges de Dordogne qui serpentent paisiblement. Nous avons flâné le long de la rivière après avoir fait le tour des stands. Un cadre vraiment enchanteur pour terminer ces deux journées de découverte du patrimoine corrézien.",
-    "type": "premiere-semaine",
+    "content": "**26 juillet - Journée à Tulle**\n\nDirection Tulle pour une journée de découverte et de chasse aux bonnes affaires ! Nous avons écumé deux brocantes dans la matinée, puis déjeuner en ville à la Brasserie La Rotonde. L'après-midi, balade relaxante au parc Auzelou pour digérer et profiter de la verdure tulliste.\n\nNous sommes allés voir le fameux vaisselier repéré lors d'une précédente sortie, mais après réflexion, il ne nous plaît finalement pas assez pour l'acheter. Ce sera pour une autre fois !\n\nPassage chez BUT à Tulle pour acheter notre aspirateur laveur destiné au rez-de-chaussée de la bicoque. Un achat pratique qui nous sera bien utile pour l'entretien de nos nouveaux sols !\n\n**27 juillet - Déjeuner chez Marcel et découverte d'Argentat**\n\nExcellent déjeuner chez Marcel ! La réputation n'était pas usurpée. En prime, nous avons sympathisé avec la table d'à côté, un couple charmant avec qui nous avons échangé nos numéros. Ils ont des meubles à vendre qui pourraient nous intéresser pour la bicoque, et ils nous ont donné le tuyau d'une brocante à Argentat.\n\nDirect après le repas, direction Argentat pour cette fameuse brocante ! Joli village avec de magnifiques berges de Dordogne qui serpentent paisiblement. Nous avons flâné le long de la rivière après avoir fait le tour des stands. Un cadre vraiment enchanteur pour terminer ces deux journées de découverte du patrimoine corrézien.",
+    "type": "mai-juillet-2025",
     "images": [
       "quatrieme-journee/PXL_20250727_131715824.jpg",
       "quatrieme-journee/PXL_20250727_132047560.jpg",
@@ -112,7 +112,7 @@
     "title": "Sixième jour à la bicoque",
     "date": "2025-07-28",
     "content": "Premier jour de télétravail à la bicoque ! Réveil matinal à 6h15 pour commencer cette nouvelle routine professionnelle depuis notre nouvelle maison. Sortie pipi matinale avec Vaya dans le jardin, suivie d'un petit déjeuner bien mérité.\n\nVaya a été notre réveille-matin involontaire : elle a réveillé Patrick dès 6h30 ! Pas mal de travail qui m'attendait après une semaine d'absence, mais quel plaisir de pouvoir travailler dans ce cadre.\n\nEn milieu d'après-midi, Patrick est parti à Brive récupérer le fauteuil que nous avions repéré hier sur Le Bon Coin Corrèze. 30€ seulement pour cette belle trouvaille ! Le fauteuil est comme neuf et s'accorde parfaitement dans l'esprit du canapé laissé par l'ancienne propriétaire.\n\nÀ 16h, belle balade avec Vaya toutes les deux sur le chemin de randonnée qui démarre littéralement au bout de notre jardin. Quel bonheur d'avoir la nature à portée de main !\n\nJe serai en repos demain et après-demain car le travail de week-end complet (samedi et dimanche) commence dès ce week-end. Il faut bien récupérer avant !",
-    "type": "premiere-semaine",
+    "type": "mai-juillet-2025",
     "images": [
       "sixieme-journee/PXL_20250728_153843966.jpg"
     ],
@@ -124,7 +124,7 @@
     "title": "Septième jour à la bicoque",
     "date": "2025-07-29",
     "content": "Journée bien remplie pour notre dernier jour de cette première semaine ! Direction la déchetterie d'Égletons ce matin avec la remorque pour nous débarrasser des derniers encombrants de la maison. Retour à la bicoque pour laisser la remorque, puis cap sur Ussel pour une journée shopping et découverte.\n\nPause déjeuner à la Brasserie Le Paris où j'ai savouré un excellent magret sauce myrtilles - un délice ! L'après-midi a été consacrée aux achats pratiques : passage chez Monsieur Bricolage pour une brouette, des sabots de jardin et des bottes, puis direction Intersport pour s'équiper de bonnes chaussures de randonnée et quelques vêtements qui resteront définitivement à la bicoque.\n\nCe soir, je télécharge les cartes GPX du coin pour préparer nos futures aventures. À Saint-Merd, il y a trois randonnées de 4, 10 et 12 km que nous ferons dès que possible !\n\nDemain, retour à Bordeaux. Patrick reprend le travail jeudi et lundi, et moi ce sera non-stop jusqu'à lundi inclus. Cette première semaine à la bicoque se termine, mais que de souvenirs déjà !",
-    "type": "premiere-semaine",
+    "type": "mai-juillet-2025",
     "images": [
       "septieme-journee/PXL_20250729_094658144.jpg",
       "septieme-journee/PXL_20250729_094721301.jpg",
@@ -139,7 +139,7 @@
     "title": "Retour à Bordeaux",
     "date": "2025-07-30",
     "content": "Fin de notre première semaine à la bicoque ! Lever à 8h pour préparer le retour à Bordeaux. Après un bon petit déjeuner, nous chargeons la voiture avec nos affaires et quelques découvertes de la semaine.\n\nTrajet retour avec une petite pause à l'aire du Manoire, qui tombe pile à 1h30 de route - parfait pour couper le voyage ! Retour à Bordeaux sans encombre après ce premier séjour mémorable.\n\nDès notre arrivée, j'emmène Vaya au parc bordelais pour retrouver ses copains. Elle était tellement heureuse qu'elle a couru comme une folle avec Valko, comme d'habitude ! Ça lui a fait du bien de se défouler après la route.\n\nCoucher pas trop tard ce soir car Patrick et moi nous levons à 6h demain matin. Malgré la fatigue du voyage, nous avons déjà hâte de repartir pour notre prochaine escapade à la bicoque !",
-    "type": "premiere-semaine",
+    "type": "mai-juillet-2025",
     "images": [],
     "order": 9
   },
@@ -147,8 +147,8 @@
     "id": "1753731000001",
     "title": "Deuxième séjour à la bicoque",
     "date": "2025-08-14",
-    "content": "Nous sommes de retour depuis le 5 août ! Ces derniers jours ont été consacrés à l'ameublement de notre nouveau chez-nous. Patrick s'est montré particulièrement actif : il est allé chercher la maie à Brive ainsi que la table, les bancs et les deux chaises. Il a également fait le voyage jusqu'à Tarnac, dans le plateau de Millevaches, pour récupérer le buffet.\n\nDe mon côté, je reprends le rythme du travail. Dimanche, jour de repos bien mérité, nous avons déjeuné à Égletons. Au lac, c'est la cohue habituelle jusqu'à la mi-août ! Nous en avons profité pour passer à la mairie afin de nous présenter officiellement. Belle rencontre avec madame la maire et son adjointe, qui se trouve être l'épouse du député Pranchère.\n\nCette semaine, je suis en équipe du matin et je travaille évidemment le 15 août. Ensuite, quelques jours de repos grâce à un RTT avant de reprendre jeudi prochain.\n\nDimanche, sortie prévue avec Vaya ! J'ai déniché une compagne de balade canine via un groupe Facebook dédié aux promenades de chiens en Corrèze. Cette habitante de Saint-Merd-de-Lapleau a deux compagnons : un bouledogue français et un berger australien. Pour cette première rencontre, nous ferons la balade avec le bouledogue. Vaya va être ravie d'avoir enfin un copain pour se dégourdir les pattes !",
-    "type": "deuxieme-sejour",
+    "content": "Nous sommes de retour depuis le 5 août ! Ces derniers jours ont été consacrés à l'ameublement de notre nouveau chez-nous. Patrick s'est montré particulièrement actif : il est allé chercher la maie à Brive ainsi que la table, les bancs et les deux chaises. Il a également fait le voyage jusqu'à Tarnac, dans le plateau de Millevaches, pour récupérer le buffet.\n\nDe mon côté, je reprends le rythme du travail. Dimanche, jour de repos bien mérité, nous avons déjeuné à Égletons. Au lac, c'est la cohue habituelle jusqu'à la mi-août ! Nous en avons profité pour passer à la mairie afin de nous présenter officiellement. Belle rencontre avec madame la maire et son adjointe, qui se trouve être l'épouse du député Pranchère.\n\nCette semaine, je suis en équipe du matin et je travaille évidemment le 15 août. Ensuite, quelques jours de repos grâce à un RTT avant de reprendre jeudi prochain.\n\nDimanche, sortie prévue avec Vaya ! J'ai déniché une compagne de balade canine via un groupe Facebook dédié aux promenades de chiens en Corrèze. Cette habitante de Saint-Merd-de-Lapleau a deux compagnons : un bouledogue français et un berger australien. Pour cette première rencontre, nous ferons la balade avec le bouledogue. Vaya va être ravie d'avoir enfin un copain pour se dégourdir les pattes lors de nos séjours à la bicoque !",
+    "type": "aout-2025",
     "images": [
       "deuxieme-sejour/PXL_20250805_164236100.jpg",
       "deuxieme-sejour/PXL_20250805_164512588.jpg",
@@ -169,7 +169,7 @@
     "title": "Livraison stères de bois pour l'hiver",
     "date": "2025-08-24",
     "content": "Grande livraison aujourd'hui ! Nous avons reçu 8 stères de bois pour notre chauffage de cet hiver. C'est un investissement important mais indispensable pour affronter les froids corréziens dans notre maison en pierre.\n\nIl nous a fallu 24 heures de travail pour tout stocker correctement ! Nous avons réparti le bois entre deux endroits : une partie dans l'abri situé derrière la petite dépendance, et le reste dans le garage. Un vrai marathon, mais au moins nous voilà parés pour l'hiver.\n\nLe bois est de belle qualité et bien sec. Nous avons pris soin de l'empiler soigneusement pour optimiser l'espace et assurer une bonne ventilation. Notre poêle Godin va pouvoir nous tenir bien au chaud durant les longues soirées hivernales !",
-    "type": "deuxieme-sejour",
+    "type": "aout-2025",
     "images": [
       "bois-hiver/IMG-20250824-WA0001.jpg",
       "bois-hiver/IMG-20250824-WA0002.jpg",
@@ -183,7 +183,7 @@
     "title": "Promenade canine avec Oslo et Célia",
     "date": "2025-08-26",
     "content": "Belle rencontre aujourd'hui avec Célia, une jeune maman qui vit à Saint-Merd-de-Lapleau ! Elle a deux adorables compagnons : Buzz, un bouledogue français, et Oslo, un magnifique berger australien.\n\nNous avons fait une superbe balade autour de chez elle avec Oslo et Vaya. Quel plaisir de voir nos deux chiens s'entendre à merveille ! Oslo est vraiment un chien très sympa, énergique comme tous les bergers australiens, et parfait compagnon de jeu pour notre Vaya.\n\nCette rencontre via le groupe Facebook des promeneurs de chiens corréziens s'avère être un vrai succès. Célia est charmante et il est rassurant de savoir que Vaya peut désormais avoir des copains pour se dégourdir les pattes lors de nos séjours à la bicoque !",
-    "type": "deuxieme-sejour",
+    "type": "aout-2025",
     "images": [
       "oslo/PXL_20250826_150936280.jpg",
       "oslo/Messenger_creation_B56E0CC6-FA3A-4EBD-9467-EA50D464A365~2.jpeg",
@@ -197,7 +197,7 @@
     "title": "Débâchage",
     "date": "2025-09-02",
     "content": "Retour à Saint-Merd-de-Lapleau ce 2 septembre pour quinze jours de vacances bien méritées ! Le maçon doit venir demain matin pour examiner l'état de la chape et planifier la suite des travaux.\n\nNotre mission de cet après-midi : enlever enfin la bâche et la structure en bois installées il y a dix ans, quand les travaux avaient été abandonnés. Dix longues années pendant lesquelles les ronces ont proliféré sous cette protection de fortune...\n\nPatrick s'est donné du mal pour déclouer certaines planches récalcitrantes, tandis que d'autres, pourries par le temps et l'humidité, se brisaient d'elles-mêmes. Un travail laborieux mais nécessaire pour libérer cet espace et permettre aux futurs travaux de reprendre dans de bonnes conditions.",
-    "type": "travaux",
+    "type": "septembre-octobre-2025",
     "images": [
       "travaux/debachage/PXL_20250902_115708817.jpg",
       "travaux/debachage/PXL_20250902_115741412.jpg",
@@ -214,7 +214,7 @@
     "title": "Septembre-octobre 2025",
     "date": "2025-09-09",
     "content": "Ces dernières semaines à la bicoque sont bien remplies ! \n\n**Marché de Marcillac-la-Croisille** : Zouille commence vraiment à être à l'aise ! Elle profite du trajet à vélo le nez au vent dans son sac sur mon dos. Le marché du mardi nous régale avec ses excellents produits locaux : mique, millassou, pâté de pommes de terre, fromages, et surtout ces tomates qui ont un vrai goût de tomates !\n\n**Balades quotidiennes** : Nos promenades au petit ruisseau avec Vaya sont devenues un rituel. Ces moments nous offrent parfois de magnifiques couchers de soleil à photographier. Hier soir, moment magique : nous avons croisé une famille de chevreuils - le mâle, la femelle et leur faon - sous le grand chêne au milieu du champ. Un spectacle inoubliable !\n\n**Jardinage** : Le jour du débâchage de la terrasse, nous avons aussi planté en pleine terre le laurier ramené de Bordeaux. Il me reste encore à planter la verveine. Ce ne sont pas vraiment les plantes de prédilection de la région, mais nous espérons qu'elles s'adapteront !\n\n**Problèmes de cave** : Les grosses pluies de ces derniers jours ont inondé la cave. Nous espérons qu'une partie du problème se résoudra une fois la terrasse terminée. Sinon, il faudra reprendre une partie de l'étanchéité en bas de l'escalier menant à la nouvelle cave.",
-    "type": "septembre-octobre",
+    "type": "septembre-octobre-2025",
     "images": [
       "divers/coucher-soleil.jpg",
       "divers/laurier.jpg",
@@ -227,8 +227,7 @@
     "id": "1753820000001",
     "title": "Randonnée en famille avec Sylvain et Sylvie",
     "date": "2025-08-20",
-    "content": "Quelle belle surprise ! Sylvain et Sylvie étaient de passage en Corrèze et nous en avons profité pour organiser une superbe randonnée ensemble : le viaduc des Rochers Noirs au départ de Soursac.\n\nUne randonnée de 12 km que nous avons tous savourée, y compris Vaya qui nous a suivis sans aucun problème ! Nous avons eu un temps absolument idéal pour cette escapade en famille. Le point de vue lors de notre pique-nique à mi-parcours était tout simplement incroyable - ces paysages corréziens nous émerveillent toujours autant.\n\nComble de l'ironie : j'étais plus fatiguée que Vaya à l'arrivée ! Notre chienne a vraiment une forme olympique. Nous avons terminé cette belle journée par une petite bière bien méritée à Soursac avant de nous séparer. Un moment parfait de partage en famille au cœur de notre nouvelle région.",
-    "type": "decouvertes",
+    "type": "aout-2025",
     "images": [
       "rando-sylvain/PXL_20250820_082609034.jpg",
       "rando-sylvain/PXL_20250820_100000301~2.jpg",
@@ -245,14 +244,15 @@
       "rando-sylvain/PXL_20250820_113124523.jpg"
     ],
     "image": "rando-sylvain/PXL_20250820_082609034.jpg",
-    "order": 0
+    "order": 0,
+    "content": "Quelle belle surprise ! Sylvain et Sylvie étaient de passage en Corrèze et nous en avons profité pour organiser une superbe randonnée ensemble : le viaduc des Rochers Noirs au départ de Soursac.\n\nUne randonnée de 12 km que nous avons tous savourée, y compris Vaya qui nous a suivis sans aucun problème ! Nous avons eu un temps absolument idéal pour cette escapade en famille. Le point de vue lors de notre pique-nique à mi-parcours était tout simplement incroyable - ces paysages corréziens nous émerveillent toujours autant.\n\nComble de l'ironie : j'étais plus fatiguée que Vaya à l'arrivée ! Notre chienne a vraiment une forme olympique. Nous avons terminé cette belle journée par une petite bière bien méritée à Soursac avant de nous séparer. Un moment parfait de partage en famille au cœur de notre nouvelle région."
   },
   {
     "id": "1753906000001",
     "title": "Visite de Collonges-la-Rouge",
     "date": "2025-09-06",
+    "type": "septembre-octobre-2025",
     "content": "Belle sortie aujourd'hui ! Après avoir fait un tour chez Emmaüs à Brive-la-Gaillarde où nous avons trouvé une table de nuit parfaite pour poser notre micro-ondes, direction Collonges-la-Rouge pour découvrir ce village classé parmi les plus beaux de France.\n\nEt effectivement, le village est absolument magnifique ! Tout construit en grès rouge, parfaitement conservé, avec un charme authentique qui nous a conquis. Les ruelles pavées, les maisons à tourelles, les échauguettes... un véritable voyage dans le temps ! Le village regorge de boutiques proposant des produits artisanaux locaux.\n\nPour le déjeuner, nous avons testé le restaurant Le Cantou et quelle excellente surprise ! Une cuisine familiale de qualité avec une omelette aux cèpes absolument délicieuse. En dessert, nous avons goûté la flognarde, spécialité locale, qui était tout simplement succulente. Le rapport qualité-prix-quantité était parfait, nous avons été très agréablement surpris. Une belle découverte culinaire pour accompagner cette visite culturelle !",
-    "type": "decouvertes",
     "images": [
       "collonges/IMG-20250906-WA0002.jpg",
       "collonges/IMG-20250906-WA0003.jpg",
@@ -267,6 +267,110 @@
       "collonges/undefined_Enlève_les_personnes.jpg"
     ],
     "image": "collonges/PXL_20250906_093843483~2.jpg",
+    "order": 1
+  },
+  {
+    "id": "1762194000000",
+    "title": "Nos balades régulières à Sédières",
+    "date": "2025-10-13",
+    "content": "Le domaine de Sédières est devenu l'un de nos lieux de promenade favoris. Une petite randonnée d'environ 5 kilomètres, parfaite pour une sortie régulière avec Vaya. C'est un plaisir de la voir s'ébattre dans ce cadre magnifique, parfois en compagnie de Célia et de ses chiens, Oslo et Buzz. Chaque balade est une nouvelle petite aventure !\n\n---\n\n### Le domaine de Sédières : un peu d'histoire et de nature\n\nLe domaine de Sédières, situé à Clergoux, est un magnifique ensemble de 130 hectares comprenant un château, une forêt et des étangs. Classé Monument historique, il est aujourd'hui un grand site de loisirs, de nature et de culture.\n\n**Un château chargé d'histoire**\n\nÀ l'origine une forteresse médiévale du XVᵉ siècle construite par la famille Bothier, le château a été remanié à la Renaissance avec de plus grandes ouvertures et des tourelles. Au fil des siècles, il est passé entre les mains de plusieurs grandes familles (Noailles, Lentilhac, Carbonat) avant d'être racheté et restauré par le général de Chanal vers 1870. Laissé à l'abandon au XXᵉ siècle, il a été sauvé par le Conseil général de la Corrèze en 1965 qui, après restauration, en a fait le lieu d'accueil pour des expositions et le célèbre festival de Sédières dès les années 1970.\n\n**Un cadre naturel exceptionnel**\n\nLe château se niche dans un vallon verdoyant, entouré de plusieurs étangs et d'une forêt domaniale gérée par l'ONF. Cet environnement frais et boisé en fait un lieu idéal pour les balades, le trail ou le VTT, particulièrement agréable en été.\n\n### Randonnées et activités de plein air\n\nLe domaine est un véritable terrain de jeu pour les amateurs de nature.\n\n**Nos balades : le \"Tour des étangs\"**\n\nC'est notre circuit de prédilection !\n- **Distance :** 5,2 km (environ 1h30 à 2h de marche).\n- **Niveau :** Très facile et accessible à tous, avec peu de dénivelé.\n- **Parcours :** Une boucle très ombragée qui alterne chemins forestiers et rives des étangs, offrant de belles vues sur le château et la nature environnante.\n\n**Autres activités sur le domaine**\n\n- **Pour les marcheurs :** Un \"Grand tour de Sédières\" de 15 km pour les plus motivés.\n- **Pour les traileurs :** 3 circuits balisés (vert 5,5 km, bleu 9 km, rouge 14 km).\n\n- **Pour les VTTistes :** Une base VTT labellisée avec 12 circuits (de 5 à 100 km) et un bike park.\n- **Autres :** Tyrolienne (en été), marche nordique, course d’orientation.\n\n### Infos Pratiques\n\n- Le domaine est géré par le Département de la Corrèze et se situe à environ 3 km de Clergoux.\n- Si le château lui-même n'ouvre ses portes que l'été pour les événements culturels, les chemins de randonnée et les circuits sportifs sont accessibles toute l'année.",
+    "type": "septembre-octobre-2025",
+    "images": [
+      "Sédières/PXL_20251013_073947279.jpg",
+      "Sédières/PXL_20251013_074001693.jpg",
+      "Sédières/PXL_20251013_102249224.jpg",
+      "Sédières/PXL_20251013_102327631.jpg",
+      "Sédières/PXL_20251013_102347089.jpg",
+      "Sédières/PXL_20251013_102443405.jpg",
+      "Sédières/PXL_20251013_102446697.jpg",
+      "Sédières/PXL_20251013_102451067.jpg",
+      "Sédières/PXL_20251014_141200527.jpg",
+      "Sédières/PXL_20251014_142411063.jpg",
+      "Sédières/PXL_20251014_145522347.jpg"
+    ],
+    "image": "Sédières/PXL_20251013_073947279.jpg",
+    "order": 14
+  },
+  {
+    "id": "1762022400000",
+    "title": "Fête de la Pomme à Saint-Merd-de-Lapleau",
+    "date": "2025-10-11",
+    "content": "Nous sommes allés à la Fête de la Pomme à Saint-Merd-de-Lapleau et avons savouré du jus de pomme artisanal ainsi que de délicieuses pâtisseries maison préparées par les organisateurs. Ce fut l'occasion de retrouver Alain et Évelyne, nos voisins d'en face, qui habitent Clergoux et tiennent des chambres d'hôtes, avec qui nous partageons toujours de bons moments.\n\n---\n\n### La Fête de la Pomme à Saint-Merd-de-Lapleau\n\nLa Fête de la Pomme à Saint-Merd-de-Lapleau est une animation locale d'automne incontournable, organisée par le comité des fêtes et les \"Amis de la maison du patrimoine\". Elle célèbre la pomme et les produits du terroir corrézien dans une ambiance conviviale.\n\n**Ce qu'on sait sur la fête :**\n\n- L'événement est officiellement référencé comme \"animation et fête locale, nature, animations locales\" par l'office de tourisme d'Égletons.\n- Elle est portée conjointement par le comité des fêtes mersaintois et l'association \"Les Amis de la maison du patrimoine\", souvent illustrés sur les visuels promotionnels.\n- Traditionnellement, cette fête a lieu en octobre et fait partie des événements réguliers de la commune, aux côtés d'autres animations locales.\n\n**Ambiance et contenu :**\n\nBien que le programme détaillé varie chaque année, on peut en déduire certains éléments caractéristiques :\n\n- La journée est centrée sur la thématique de la pomme, avec des stands dédiés, des dégustations (jus de pomme pressé, pâtisseries maison) et des produits locaux.\n- Une dimension patrimoniale et naturelle est mise en avant, notamment grâce à l'implication des \"Amis de la maison du patrimoine\" et au classement de l'événement dans la catégorie \"nature\".\n\n- L'ambiance est conviviale, souvent ponctuée par des possibilités de restauration (comme des menus spéciaux \"fête de la pomme\" proposés par des restaurants locaux).\n\nPour obtenir les détails précis de chaque édition (animations spécifiques, marché de producteurs, activités pour enfants, etc.), il est conseillé de consulter les affiches et événements récents sur la page Facebook du comité des fêtes, de la mairie, ou le site de l'office de tourisme d'Égletons.",
+    "type": "septembre-octobre-2025",
+    "images": [
+      "Fête-pomme/PXL_20251011_125637296.MP.jpg"
+    ],
+    "image": "Fête-pomme/PXL_20251011_125637296.MP.jpg",
+    "order": 13
+  },
+  {
+    "id": "1762022400001",
+    "title": "Randonnée : le Pont de Gire à Saint-Merd-de-Lapleau",
+    "date": "2025-09-13",
+    "content": "Aujourd'hui, j'ai eu le plaisir de découvrir la randonnée du Pont de Gire, une superbe balade que j'ai partagée avec Celia, Antoine et son fidèle Patou. Un moment mémorable au cœur de la nature corrézienne.\n\n---\n\n### Le Pont de Gire : un circuit balisé autour de Saint-Merd-de-Lapleau\n\nLe circuit du Pont de Gire est une promenade emblématique de Saint-Merd-de-Lapleau, idéale pour s'immerger dans la nature corrézienne.\n\n**Infos générales sur la rando**\n\n- Le parcours suit d'anciens chemins bordés de murets, traversant des sous-bois très frais et des fonds de vallée couverts de mousse.\n- Le départ s'effectue directement depuis Saint-Merd-de-Lapleau, et il s'agit d'une boucle accessible pour la marche, la marche nordique, le VTT ou même à cheval.\n\n- C'est une promenade agréable, plus qu'une randonnée exigeante, parfaite si vous avez l'habitude de marcher.\n\n**Ambiance et nature**\n\n- Le circuit traverse des pentes boisées réputées pour être le lieu de repos de cerfs, chevreuils et sangliers. Avec un peu de discrétion, vous pourriez avoir la chance d'apercevoir ces animaux sauvages.\n- Le chemin est très ombragé, offrant une grande fraîcheur et une végétation luxuriante, recouverte de mousse, ce qui en fait une balade particulièrement appréciée par temps chaud.\n\n**Départ et sens du circuit**\n\n- Pour démarrer la randonnée \"dans le bon sens\" depuis l'église de Saint-Merd-de-Lapleau, il faut remonter la rue en direction de la D978, puis emprunter un petit sentier sur la droite (suivez le panneau PR7).\n- Le circuit est entièrement balisé, vous permettant de suivre le marquage sans difficulté une fois le bon départ trouvé.",
+    "type": "septembre-octobre-2025",
+    "images": [
+      "youtube:czTdXNC0vDs",
+      "le pont de gire/PXL_20250913_080500071.jpg",
+      "le pont de gire/PXL_20250913_100901623.MP.jpg",
+      "le pont de gire/PXL_20250913_101241250.jpg",
+      "le pont de gire/gemini-2.5-flash-image-preview (nano-banana)_Enlève_les_laisses_d.png",
+      "le pont de gire/Screenshot_20250913-134935.png",
+      "le pont de gire/Screenshot_20250913-144914.png"
+    ],
+    "image": "le pont de gire/PXL_20250913_080500071.jpg",
+    "order": 15
+  },
+  {
+    "id": "1735820000001",
+    "title": "Randonnée des Chapelles à Servières-le-Château",
+    "date": "2026-01-02",
+    "content": "Superbe randonnée tous les trois avec Vaya à Servières-le-Château ! Nous avons fait le circuit des Chapelles et nous avons absolument adoré. Le point d'orgue de cette balade : la découverte de la magnifique Chapelle Notre-Dame du Roc.\n\n**La Chapelle Notre-Dame du Roc**\n\nCette petite chapelle du XVIIᵉ siècle est véritablement perchée au-dessus des gorges de la Glane, sur un promontoire rocheux dominant à pic le ruisseau. La vue dégagée sur la vallée est à couper le souffle !\n\n**Histoire et construction**\n\nLe premier édifice fut achevé en 1694 à l'initiative d'Antoine de Peyte, dernier curé de Glény et premier curé de Servières, après le transfert de la paroisse. La chapelle a ensuite été agrandie au XIXᵉ siècle avec des travaux importants vers 1865. Les vitraux ont été restaurés plus récemment, vers 1998-1999.\n\n**Les légendes du lieu**\n\nPlusieurs récits fascinants expliquent le choix de ce rocher comme lieu de culte :\n\n• Une jeune fille poursuivie par des brigands (ou une bergère poursuivie par un loup, selon les versions) aurait sauté du haut de la falaise en invoquant la Vierge et serait sortie indemne, motivant ainsi la construction de la chapelle.\n\n• Une autre légende raconte qu'une génisse aurait découvert dans les rochers une statue de la Vierge, plusieurs fois ramenée au bourg mais retrouvée chaque fois à son emplacement d'origine - signe qu'il fallait y bâtir un sanctuaire.\n\n• Une version plus \"rationnelle\" évoque une image de la Vierge placée à l'endroit le plus dangereux du chemin entre Servières et Glény, près d'une croix sous un surplomb rocheux qui servait d'oratoire rustique.\n\n**Un lieu de pèlerinage**\n\nLa chapelle est dédiée à Notre-Dame du Roc et s'inscrit dans la réorganisation religieuse locale quand la paroisse fut transférée de Glény à Servières. Le site est devenu un lieu de pèlerinage marial, avec notamment un pèlerinage traditionnel le 8 septembre pour la Nativité de la Vierge.\n\nAujourd'hui, elle fait p... [truncated]",
+    "type": "janvier-2026",
+    "images": [
+      "Servieres/PXL_20260102_115631797.jpg",
+      "Servieres/PXL_20260102_115716056.jpg",
+      "Servieres/PXL_20260102_115722972.jpg",
+      "Servieres/PXL_20260102_115818972.MP.jpg",
+      "Servieres/PXL_20260102_115853061.jpg",
+      "Servieres/video_chapelle.mp4",
+      "Servieres/PXL_20260102_120057183.jpg",
+      "Servieres/PXL_20260102_120102495.jpg",
+      "Servieres/PXL_20260102_120248509.MP.jpg",
+      "Servieres/video_chapelle2.mp4",
+      "Servieres/PXL_20260102_131908175.jpg",
+      "Servieres/PXL_20260102_131913701.MP.jpg",
+      "Servieres/PXL_20260102_131918179.MP.jpg",
+      "Servieres/PXL_20260102_140549641.jpg",
+      "Servieres/PXL_20260102_140607096.jpg",
+      "Servieres/PXL_20260102_140641532.jpg",
+      "Servieres/PXL_20260102_141254353.jpg",
+      "Servieres/IMG-20260103-WA0003.jpg",
+      "Servieres/IMG-20260103-WA0004.jpg"
+    ],
+    "image": "Servieres/PXL_20260102_115631797.jpg",
+    "order": 0
+  },
+  {
+    "id": "1736860000001",
+    "title": "Randonnée du Circuit de la Gour à Gimel-les-Cascades",
+    "date": "2026-01-14",
+    "content": "Magnifique randonnée tous les trois avec Vaya à Gimel-les-Cascades ! Nous avons parcouru le circuit de la Gour, qui permet de découvrir la \"quatrième cascade\" de Gimel, moins connue que les trois cascades principales du site payant.\n\n**Le village de Gimel-les-Cascades**\n\nGimel-les-Cascades est un charmant village corrézien situé à une quinzaine de kilomètres de Tulle. Son nom évoque immédiatement ses célèbres cascades, formées par la rivière Montane (aussi appelée Gimelle à cet endroit). Le village possède également une église romane du XIIe siècle abritant un remarquable trésor : la châsse de Saint-Étienne, chef-d'œuvre d'orfèvrerie limousine du XIIe siècle, classée aux Monuments Historiques.\n\n**La cascade du Gour - La 4ᵉ cascade secrète**\n\nLa cascade du Moulin de la Gour se compose d'une première chute d'environ 3 mètres, suivie d'un long couloir rocheux d'environ 50 mètres, fermé en amont par une seconde chute en \"queue de cheval\" de 7 à 8 mètres. Elle fait partie du même système de gorges que les trois grandes chutes de Gimel, sur un tronçon très encaissé et sauvage de la vallée de la Montane.\n\nLe circuit de la Gour permet aux \"initiés\" de découvrir cette merveille naturelle gratuitement, contrairement au site principal des cascades qui est payant.\n\n**Un site protégé depuis 1912**\n\nL'ensemble des cascades de Gimel est l'un des tout premiers sites protégés en France ! Les cascades ont été classées comme \"site\" en 1912, grâce à la mobilisation de l'artiste Gaston Vuillier contre un projet de micro-centrale qui aurait détourné la Montane. Un bel exemple de protection du patrimoine naturel avant l'heure !\n\n**Zone Natura 2000**\n\nToute la vallée des gorges de la Montane, incluant le secteur de la cascade du Gour, est aujourd'hui classée en zone spéciale de conservation (ZSC) au titre du réseau Natura 2000. La vallée est très étroite, humide et escarpée, avec des habitats rocheux, forestiers et de gorges remarquables.\n\nLe sit... [truncated]",
+    "type": "janvier-2026",
+    "images": [
+      "gimel/PXL_20260114_113153803.jpg",
+      "gimel/gimel_120922134.mp4",
+      "gimel/PXL_20260114_122332972.jpg",
+      "gimel/gimel_122315787.mp4",
+      "gimel/PXL_20260114_122624876.MP.jpg",
+      "youtube:JfHIKrPlkNE",
+      "gimel/gimel_131146566.mp4",
+      "gimel/gimel_131202911.mp4",
+      "gimel/PXL_20260114_131325463.MP.jpg",
+      "gimel/PXL_20260114_131518530.MP.jpg",
+      "youtube:7Pwur8_qPOQ"
+    ],
+    "image": "gimel/PXL_20260114_113153803.jpg",
     "order": 1
   }
 ]

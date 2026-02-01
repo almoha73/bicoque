@@ -4,13 +4,33 @@ function ArticlePage({ article, onClose }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isSlideshow, setIsSlideshow] = useState(false)
 
-  const images = article.images || (article.image ? [article.image] : [])
-  
-  const getImageUrl = (imagePath) => {
+  const media = article.images || (article.image ? [article.image] : [])
+
+  const getMediaUrl = (mediaPath) => {
     // Si le chemin commence déjà par 'uploads/', l'utiliser tel quel
     // Sinon, ajouter '/uploads/' au début
-    return imagePath.startsWith('uploads/') ? `/${imagePath}` : `/uploads/${imagePath}`
+    return mediaPath.startsWith('uploads/') ? `/${mediaPath}` : `/uploads/${mediaPath}`
   }
+
+  const isVideo = (path) => {
+    const videoExtensions = ['.mp4', '.webm', '.mov', '.avi', '.mkv']
+    return videoExtensions.some(ext => path.toLowerCase().endsWith(ext))
+  }
+
+  const isYouTube = (path) => {
+    return path.startsWith('youtube:')
+  }
+
+  const getYouTubeId = (path) => {
+    return path.replace('youtube:', '')
+  }
+
+  const isAnyVideo = (path) => {
+    return isVideo(path) || isYouTube(path)
+  }
+
+  const images = media.filter(m => !isVideo(m))
+  const videos = media.filter(m => isVideo(m))
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -20,10 +40,10 @@ function ArticlePage({ article, onClose }) {
             setIsSlideshow(false)
             break
           case 'ArrowLeft':
-            previousImage()
+            previousMedia()
             break
           case 'ArrowRight':
-            nextImage()
+            nextMedia()
             break
         }
       }
@@ -38,15 +58,15 @@ function ArticlePage({ article, onClose }) {
     setIsSlideshow(true)
   }
 
-  const previousImage = () => {
-    setCurrentImageIndex(prev => 
-      prev === 0 ? images.length - 1 : prev - 1
+  const previousMedia = () => {
+    setCurrentImageIndex(prev =>
+      prev === 0 ? media.length - 1 : prev - 1
     )
   }
 
-  const nextImage = () => {
-    setCurrentImageIndex(prev => 
-      prev === images.length - 1 ? 0 : prev + 1
+  const nextMedia = () => {
+    setCurrentImageIndex(prev =>
+      prev === media.length - 1 ? 0 : prev + 1
     )
   }
 
@@ -103,12 +123,12 @@ function ArticlePage({ article, onClose }) {
                 </p>
               </div>
               
-              {images.length > 0 && (
+              {media.length > 0 && (
                 <button
                   onClick={scrollToPhotos}
                   className="bg-palette-3 hover:bg-palette-2 text-white px-6 py-3 rounded-lg flex items-center gap-2 transition-colors whitespace-nowrap"
                 >
-                  📸 Voir les photos ({images.length})
+                  📸 Voir les médias ({media.length})
                 </button>
               )}
             </div>
@@ -118,30 +138,62 @@ function ArticlePage({ article, onClose }) {
               {formatContent(article.content)}
             </div>
 
-            {/* Photos */}
-            {images.length > 0 && (
+            {/* Photos et Vidéos */}
+            {media.length > 0 && (
               <section id="photos-section" className="mt-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-palette-1 mb-8">
-                  Photos ({images.length})
+                  Photos et vidéos ({media.length})
                 </h2>
-                
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {images.map((image, index) => (
+                  {media.map((item, index) => (
                     <div
                       key={index}
                       className="relative group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
                       onClick={() => openSlideshow(index)}
                     >
-                      <img
-                        src={getImageUrl(image)}
-                        alt={`Photo ${index + 1}`}
-                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                        <span className="text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity">
-                          🔍
-                        </span>
-                      </div>
+                      {isYouTube(item) ? (
+                        <>
+                          <img
+                            src={`https://img.youtube.com/vi/${getYouTubeId(item)}/hqdefault.jpg`}
+                            alt={`Vidéo ${index + 1}`}
+                            className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
+                            <span className="text-red-600 text-5xl drop-shadow-lg">
+                              ▶
+                            </span>
+                          </div>
+                        </>
+                      ) : isVideo(item) ? (
+                        <>
+                          <video
+                            src={getMediaUrl(item)}
+                            className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                            muted
+                            playsInline
+                            preload="metadata"
+                          />
+                          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
+                            <span className="text-white text-5xl drop-shadow-lg">
+                              ▶
+                            </span>
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <img
+                            src={getMediaUrl(item)}
+                            alt={`Photo ${index + 1}`}
+                            className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                            <span className="text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity">
+                              🔍
+                            </span>
+                          </div>
+                        </>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -164,16 +216,16 @@ function ArticlePage({ article, onClose }) {
             </button>
 
             {/* Navigation buttons */}
-            {images.length > 1 && (
+            {media.length > 1 && (
               <>
                 <button
-                  onClick={previousImage}
+                  onClick={previousMedia}
                   className="absolute left-4 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-palette-4 transition-colors z-10"
                 >
                   ‹
                 </button>
                 <button
-                  onClick={nextImage}
+                  onClick={nextMedia}
                   className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-palette-4 transition-colors z-10"
                 >
                   ›
@@ -181,17 +233,36 @@ function ArticlePage({ article, onClose }) {
               </>
             )}
 
-            {/* Image */}
-            <img
-              src={getImageUrl(images[currentImageIndex])}
-              alt={`Photo ${currentImageIndex + 1}`}
-              className="max-w-full max-h-full object-contain"
-            />
+            {/* Image ou Vidéo */}
+            {isYouTube(media[currentImageIndex]) ? (
+              <iframe
+                key={media[currentImageIndex]}
+                src={`https://www.youtube.com/embed/${getYouTubeId(media[currentImageIndex])}?autoplay=1`}
+                className="w-full max-w-4xl aspect-video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ) : isVideo(media[currentImageIndex]) ? (
+              <video
+                key={media[currentImageIndex]}
+                src={getMediaUrl(media[currentImageIndex])}
+                className="max-w-full max-h-full object-contain"
+                controls
+                playsInline
+                preload="auto"
+              />
+            ) : (
+              <img
+                src={getMediaUrl(media[currentImageIndex])}
+                alt={`Photo ${currentImageIndex + 1}`}
+                className="max-w-full max-h-full object-contain"
+              />
+            )}
 
             {/* Counter */}
-            {images.length > 1 && (
+            {media.length > 1 && (
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white bg-black/50 px-4 py-2 rounded-lg">
-                {currentImageIndex + 1} / {images.length}
+                {currentImageIndex + 1} / {media.length}
               </div>
             )}
           </div>

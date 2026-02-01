@@ -1,42 +1,69 @@
 function ArticleCard({ article, onRead, truncateContent }) {
-  const getImageUrl = (imagePath) => {
+  const getMediaUrl = (mediaPath) => {
     // Si le chemin commence déjà par 'uploads/', l'utiliser tel quel
     // Sinon, ajouter '/uploads/' au début
-    return imagePath.startsWith('uploads/') ? `/${imagePath}` : `/uploads/${imagePath}`
+    return mediaPath.startsWith('uploads/') ? `/${mediaPath}` : `/uploads/${mediaPath}`
+  }
+
+  const isVideo = (path) => {
+    const videoExtensions = ['.mp4', '.webm', '.mov', '.avi', '.mkv']
+    return videoExtensions.some(ext => path.toLowerCase().endsWith(ext))
   }
 
   const renderImages = () => {
-    const images = article.images || (article.image ? [article.image] : [])
-    if (!images.length) return null
+    const media = article.images || (article.image ? [article.image] : [])
+    if (!media.length) return null
+
+    // Filtrer pour n'afficher que les images (pas les vidéos) dans l'aperçu
+    const images = media.filter(m => !isVideo(m))
+    const videoCount = media.filter(m => isVideo(m)).length
+
+    if (!images.length) {
+      // S'il n'y a que des vidéos, afficher un placeholder
+      return (
+        <div className="mb-4 overflow-hidden rounded-lg bg-gray-200 h-48 flex items-center justify-center">
+          <span className="text-4xl">🎬</span>
+          <span className="ml-2 text-gray-600">{videoCount} vidéo{videoCount > 1 ? 's' : ''}</span>
+        </div>
+      )
+    }
 
     if (images.length === 1) {
       return (
         <div className="mb-4 overflow-hidden rounded-lg">
-          <img 
-            src={getImageUrl(images[0])} 
+          <img
+            src={getMediaUrl(images[0])}
             alt="Image article"
             className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
           />
+          {videoCount > 0 && (
+            <p className="text-xs text-palette-2 mt-2 text-center">
+              +{videoCount} vidéo{videoCount > 1 ? 's' : ''}
+            </p>
+          )}
         </div>
       )
     }
 
     const displayImages = images.slice(0, 3)
+    const remainingMedia = media.length - 3
     return (
       <div className="mb-4">
         <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden">
           {displayImages.map((image, index) => (
-            <img 
+            <img
               key={index}
-              src={getImageUrl(image)} 
+              src={getMediaUrl(image)}
               alt={`Image ${index + 1}`}
               className="w-full h-20 object-cover group-hover:opacity-80 group-hover:scale-105 transition-all duration-300"
             />
           ))}
         </div>
-        {images.length > 3 && (
+        {(remainingMedia > 0 || videoCount > 0) && (
           <p className="text-xs text-palette-2 mt-2 text-center">
-            +{images.length - 3} autres photos
+            {images.length > 3 && `+${images.length - 3} photos`}
+            {images.length > 3 && videoCount > 0 && ' • '}
+            {videoCount > 0 && `${videoCount} vidéo${videoCount > 1 ? 's' : ''}`}
           </p>
         )}
       </div>
