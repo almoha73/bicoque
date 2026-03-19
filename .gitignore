@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Backups de données et d'images
+*_backup
+*_backup/
